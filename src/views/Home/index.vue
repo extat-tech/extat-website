@@ -1,17 +1,12 @@
 <template>
-<Banner
-      title="'Welcome to My Website'"
-      description="'Discover amazing things here.'"
-      primary-call-to-action="'Get Started'"
-      secondary-call-to-action="'Learn More'"
-    />
+  <Banner :title="contentBanner.title" :description="contentBanner.description" />
 </template>
 
-<script>
-  import  { Banner } from '../../templates/Banner.vue'
-  
-  export default {
-    components: Banner
-  }
-  
+<script setup>
+import { contentBanner } from '../../utils/language'
+import Banner from '../../templates/Banner.vue'
+
+defineOptions({
+  name: 'home-view'
+})
 </script>

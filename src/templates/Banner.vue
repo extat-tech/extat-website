@@ -1,24 +1,39 @@
 <template>
   <section>
-    <h1>{{ Title }}</h1>
-    <p>{{ Description }}</p>
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
     <div>
-      <button>{{ primaryCallToAction }}</button>
-      <button>{{ secondaryCallToAction }}</button>
+      <ButtonPrime label="Submit"></ButtonPrime>
     </div>
   </section>
 </template>
 
 <!-- Props and Component Name -->
-<script>
-  export default {
-    name: Banner,
-    
-    props: {
-      title: String,
-      description: String,
-      primaryCallToAction: String,
-      secondaryCallToAction: String
-    }
-  };
+<script setup>
+
+import ButtonPrime from 'primevue/button';
+
+  defineOptions({ 
+    name: 'banner' 
+  })
+
+  const props = defineProps({
+    title: { 
+      type: String, 
+      required: true, 
+    },
+    description: { 
+      type: String, 
+      required: true, 
+    },
+    primaryCallToAction: { 
+      type: String, 
+      required: false, 
+    },
+    secondaryCallToAction: { 
+      type: String, 
+      required: false, 
+    },
+  }
+  )
 </script>
