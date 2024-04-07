@@ -6,6 +6,7 @@
 import { contentBanner } from '../../utils/language'
 import Banner from '../../templates/Banner.vue'
 
+
 defineOptions({
   name: 'home-view'
 })

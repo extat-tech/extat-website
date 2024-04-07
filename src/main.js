@@ -8,7 +8,7 @@ import './style.css'
 
 const app = createApp(App)
 app.use(PrimeVue, {
-  unstyled: true
+  unstyled: true,
 })
 app.use(router)
 app.mount('#app')

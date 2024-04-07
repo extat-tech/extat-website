@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
     <p>{{ description }}</p>
     <div>
-      <ButtonPrime label="Submit"></ButtonPrime>
+      <ButtonPrime class=" bg-primary" label="Submit"></ButtonPrime>
     </div>
   </section>
 </template>
