@@ -2,8 +2,21 @@
   <section>
     <h1>{{ title }}</h1>
     <p>{{ description }}</p>
-    <div>
-      <ButtonPrime class="bg-blue-500 px-4 py-2 rounded-md" label="Submit"></ButtonPrime>
+    <div class="w-full justify-center p-10 bg-gray-200 items-center flex flex-col gap-4">
+      <div class="flex flex-wrap items-center gap-2">
+        <Button label="Small" icon="pi pi-check" size="small" />
+        <Button label="Medium" icon="pi pi-check" />
+        <Button label="Large" icon="pi pi-check" size="large" />
+      </div>
+      <div class="flex flex-wrap gap-2">
+          <Button label="Primary" />
+          <Button link label="Link" />
+          <Button label="Secondary" severity="secondary" />
+      </div>
+      <div class="flex flex-wrap gap-2">
+        <Button icon="pi pi-check" size="" aria-label="Filter" />
+          <Button icon="pi pi-check" severity="secondary" aria-label="Bookmark" /> 
+      </div>
     </div>
   </section>
 </template>
@@ -11,7 +24,6 @@
 <!-- Props and Component Name -->
 <script setup>
 
-import ButtonPrime from 'primevue/button';
 
   defineOptions({ 
     name: 'banner' 
