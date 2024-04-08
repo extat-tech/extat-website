@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   darkMode: "class",
   content: [
@@ -8,7 +10,12 @@ export default {
       "./node_modules/primevue/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['"Inter Tight"', defaultTheme.fontFamily.sans],
+      'display': ['"Raleway"']
+    },
     colors: {
+      transparent: colors.transparent,
       gray: colors.slate,
       white: colors.white,
       brand: {

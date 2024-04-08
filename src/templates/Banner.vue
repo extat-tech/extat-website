@@ -1,29 +1,24 @@
 <template>
-  <section>
-    <h1>{{ title }}</h1>
-    <p>{{ description }}</p>
-    <div class="w-full justify-center p-10 bg-gray-200 items-center flex flex-col gap-4">
-      <div class="flex flex-wrap items-center gap-2">
-        <Button label="Small" icon="pi pi-check" size="small" />
-        <Button label="Medium" icon="pi pi-check" />
-        <Button label="Large" icon="pi pi-check" size="large" />
+  <section class="px-8 py-10 xl:px-16 flex justify-center bg-white">
+    <!-- Container -->
+    <div class=" grid grid-cols-1 xl:grid-cols-2 gap-10 max-w-7xl w-full"> 
+      <!-- Texts -->
+      <div class="flex flex-col justify-center max-w-xl gap-10">
+        <h1 class="text-brand-950 text-6xl font-display font-semibold">{{ title }}</h1>
+        <p class="text-xl max-w-md text-gray-950/60">{{ description }}</p>
+        <!-- Buttons -->
+        <div class="flex flex-wrap gap-3">
+          <Button size="large" label="Nossos serviços" severity="secondary" />
+          <Button size="large" label="Agende uma chamada" />
+        </div>
       </div>
-      <div class="flex flex-wrap gap-2">
-          <Button label="Primary" />
-          <Button link label="Link" />
-          <Button label="Secondary" severity="secondary" />
-      </div>
-      <div class="flex flex-wrap gap-2">
-        <Button icon="pi pi-check" size="" aria-label="Filter" />
-          <Button icon="pi pi-check" severity="secondary" aria-label="Bookmark" /> 
-      </div>
+      <img  class="w-full max-w-[640px]" src="/src/assets/img/banner.png" alt="" srcset="">
     </div>
   </section>
 </template>
 
 <!-- Props and Component Name -->
 <script setup>
-
 
   defineOptions({ 
     name: 'banner' 
