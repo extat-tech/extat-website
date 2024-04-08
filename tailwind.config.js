@@ -12,7 +12,7 @@ export default {
   theme: {
     fontFamily: {
       'sans': ['"Inter Tight"', defaultTheme.fontFamily.sans],
-      'display': ['"Raleway"']
+      'display': ['"Raleway"'],
     },
     colors: {
       transparent: colors.transparent,
