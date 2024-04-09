@@ -19,7 +19,6 @@
 
 <!-- Props and Component Name -->
 <script setup>
-
   defineOptions({ 
     name: 'banner' 
   })
