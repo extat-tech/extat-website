@@ -11,8 +11,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'sans': ['"Inter Tight"', defaultTheme.fontFamily.sans],
-      'display': ['"Raleway"'],
+      'sans': ['"Mulish"', defaultTheme.fontFamily.sans],
+      'display': ['"Mulish"']
     },
     colors: {
       transparent: colors.transparent,
@@ -29,7 +29,7 @@ export default {
         700: "#0042FF",
         800: "#063CCD",
         900: "#103B9F",
-        950: "#0A205C",
+        950: "#0F172A",
       },
       },
   },

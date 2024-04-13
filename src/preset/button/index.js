@@ -11,7 +11,7 @@ export default {
             {
                 'px-4 h-10 min-w-[2rem]': props.size === null,
                 'px-2 py-1': props.size === 'small',
-                'px-4 h-12': props.size === 'large'
+                'px-6 h-12': props.size === 'large'
             },
             {
                 'w-10 h-10 p-0': props.label == null && props.icon !== null
