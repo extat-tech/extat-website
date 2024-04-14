@@ -1,15 +1,16 @@
 <template>
   <header
     @scroll="manageNavBarAnimations"
-    class="transition-all z-10 fixed flex w-full items-center justify-center px-8 bg-white 0 h-20"
+    class="transition-all z-10 fixed flex w-full items-center justify-center md:px-8 pl-6 bg-white 0 h-14 md:h-20"
   >
     <div class="flex justify-between items-center max-w-7xl w-full">
       <!-- Back to Home -->
       <Logo></Logo>
       <!-- Buttons  -->
-      <div class="flex gap-2">
-        <PrimeButton @click="redirectLogin" label="Acesso para empresas" />
+      <div class="flex items-center gap-4">
+        <PrimeButton class="hidden  md:block" @click="redirectLogin" label="Acesso para empresas" />
         <PrimeButton
+          class="h-14 w-14 md:h-11 md:w-11"
           severity="secondary"
           icon="pi pi-bars"
           @click="visible = true"
@@ -22,9 +23,8 @@
     class=""
     position="right"
     v-model:visible="visible"
-    header="Navigation"
+    header="Em construção"
   >
-    <span class="h-10 w-10 bg-gray-100"> content goes here </span>
   </SideNavigation>
 </template>
 
