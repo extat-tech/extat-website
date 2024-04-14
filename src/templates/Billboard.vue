@@ -10,13 +10,13 @@
       />
       <!-- Texts -->
       <div
-        class="flex flex-col bg-brand-700 p-10 xl:p-16 items-start justify-center gap-10"
+        class="flex flex-col bg-brand-700 p-10 xl:p-16 items-start justify-center gap-6 md:gap-10"
       >
-        <h3 class="text-white text-4xl font-display font-medium">
+        <h3 class="text-white text-2xl md:text-4xl font-medium">
           {{ title }}
         </h3>
         <p class="text-white/80">{{ description }}</p>
-        <ScheduleCall class="w-fit" severity="secondary" />
+        <ScheduleCall class="w-full md:w-fit" severity="secondary" />
       </div>
     </div>
   </section>

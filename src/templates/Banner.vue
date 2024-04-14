@@ -1686,25 +1686,24 @@
 
     <!-- Container -->
     <div
-      class="grid grid-cols-1 xl:grid-cols-2 place-items-center gap-20 max-w-7xl w-full"
+      class="grid grid-cols-1 lg:grid-cols-2 place-content-start lg:place-items-center gap-20 max-w-7xl w-full"
     >
       <!-- Texts -->
       <div
-        class="flex flex-col items-center lg:items-start w-full xl:text-left gap-10"
+        class="flex flex-col items-start w-full xl:text-left gap-6 lg:gap-10"
       >
         <h1
-          class="w-full lg:max-w-3xl text-5xl lg:text-6xl text-brand-950 text-center lg:text-left font-display font-semibold"
+          class="w-full lg:max-w-3xl text-4xl lg:text-6xl text-brand-950 font-semibold"
         >
           {{ title }}
         </h1>
-        <p
-          class="text-xl text-center lg:text-left w-full md:max-w-2xl text-gray-950/60"
-        >
+        <p class="text-xl w-full md:max-w-2xl text-gray-950/70">
           {{ description }}
         </p>
         <!-- Buttons -->
-        <div class="flex flex-wrap justify-center lg:justify-start gap-3">
+        <div class="flex flex-col w-full lg:flex-row lg:w-auto gap-3">
           <PrimeButton
+            class="w-full lg:w-auto"
             size="large"
             label="Nossos serviços"
             severity="secondary"
@@ -1713,7 +1712,7 @@
         </div>
       </div>
       <img
-        class="bg-contain w-full xl:h-[640px]"
+        class="aspect-square"
         src="/src/assets/img/banner.png"
         alt=""
         srcset=""
@@ -1724,6 +1723,7 @@
 
 <script setup>
 import ScheduleCall from '../components/ScheduleCall.vue'
+import PrimeButton from 'primevue/button'
 
 defineOptions({
   name: 'banner'

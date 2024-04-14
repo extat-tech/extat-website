@@ -1,5 +1,5 @@
 <template>
-  <PrimeButton label="Agende uma chamada" :severity="severity" />
+  <PrimeButton class="w-full md:w-auto" label="Agende uma chamada" size="large" :severity="severity" />
 </template>
 
 <script setup>

@@ -7,7 +7,7 @@ export default {
             'items-center justify-center inline-flex text-center align-bottom',
 
             // Sizes & Spacing
-            'text-sm',
+            'text-md',
             {
                 'px-4 h-10 min-w-[2rem]': props.size === null,
                 'px-2 py-1': props.size === 'small',

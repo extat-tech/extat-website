@@ -1,6 +1,7 @@
 <template>
-  <Button
-    class="w-auto !px-0 !ring-0 !ring-transparent !focus:ring-transparent !focus:ring-offset-0 border-transparent rounded-sm hover:bg-transparent bg-transparent"
+  <a
+    href="/"
+    class="focus:outline-none transition-all focus:ring-offset-2 focus:ring focus:ring-brand-950"
   >
     <svg
       class="ml-auto"
@@ -37,10 +38,12 @@
         fill="#103B9F"
       />
     </svg>
-  </Button>
+  </a>
 </template>
 
 <script setup>
+
+
 defineOptions({
   name: 'header'
 })

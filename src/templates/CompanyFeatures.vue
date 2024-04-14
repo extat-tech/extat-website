@@ -4,10 +4,10 @@
     <div class="grid grid-cols-1 gap-10 max-w-7xl w-full">
       <!-- Texts -->
       <div class="flex flex-col max-w-2xl gap-10">
-        <h3 class="w-full text-brand-950 text-4xl font-display font-semibold">
+        <h3 class="w-full text-brand-950 text-4xl font-semibold">
           {{ title }}
         </h3>
-        <p class="w-full text-xl text-gray-950/60">{{ description }}</p>
+        <p class="w-full text-xl text-gray-950/70">{{ description }}</p>
       </div>
       <CardGrid :cardList="pilars"></CardGrid>
     </div>

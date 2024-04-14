@@ -45,18 +45,21 @@ const featuredServices = [
   {
     title: 'Consultoria Financeira',
     description: 'Organize, entenda os números e crie processos confiáveis.',
-    icon: 'pi pi-arrow-right'
+    icon: 'pi pi-arrow-right',
+    to: 'service/consultoria-financeira'
   },
   {
     title: 'Indicadores e Métricas Chave',
     description: 'Crie relatórios financeiros sob demanda para o seu negócio',
-    icon: 'pi pi-arrow-right'
+    icon: 'pi pi-arrow-right',
+    to: 'service/consultoria-financeira'
   },
   {
     title: 'Treinamentos e Capacitação',
     description:
       'Capacite sua equipe para os desafios financeiros do mercado atual.',
-    icon: 'pi pi-arrow-right'
+    icon: 'pi pi-arrow-right',
+    to: 'service/consultoria-financeira'
   }
 ]
 </script>
