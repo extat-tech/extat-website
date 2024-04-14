@@ -1,12 +1,19 @@
-// eslint-disable-next-line no-undef
 module.exports = {
   env: {
-      browser: true,
-      es2020: true,
-      node: true,
+    browser: true,
+    node: true,
+    es2021: true
   },
-  extends: ['plugin:vue/vue3-recommended', 'airbnb-base', 'prettier'],
-  parserOptions: { ecmaVersion: 12, sourceType: 'module' },
+  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'prettier'],
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser'
+    // sourceType: 'module',
+  },
   plugins: ['vue', 'prettier'],
-  rules: { 'prettier/prettier': 'error' },
+  rules: {
+    'vue/no-v-html': 'off',
+    'vue/multi-word-component-names': 'off',
+    'prettier/prettier': ['error']
+  }
 }

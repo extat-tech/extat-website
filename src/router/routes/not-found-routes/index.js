@@ -3,6 +3,6 @@ export const errorRoutes = [
   {
     path: '/:catchAll(.*)',
     name: '404',
-    component: () => import('../../../views/NotFound/index.vue'),
+    component: () => import('../../../views/NotFound/index.vue')
   }
 ]

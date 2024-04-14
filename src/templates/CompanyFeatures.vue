@@ -1,10 +1,12 @@
 <template>
   <section class="px-8 py-24 flex justify-center bg-white">
     <!-- Container -->
-    <div class=" grid grid-cols-1 gap-10 max-w-7xl w-full"> 
+    <div class="grid grid-cols-1 gap-10 max-w-7xl w-full">
       <!-- Texts -->
       <div class="flex flex-col max-w-2xl gap-10">
-        <h3 class="w-full text-brand-950 text-4xl font-display font-semibold">{{ title }}</h3>
+        <h3 class="w-full text-brand-950 text-4xl font-display font-semibold">
+          {{ title }}
+        </h3>
         <p class="w-full text-xl text-gray-950/60">{{ description }}</p>
       </div>
       <CardGrid :cardList="pilars"></CardGrid>
@@ -12,26 +14,23 @@
   </section>
 </template>
 
-<!-- Props and Component Name -->
 <script setup>
+import CardGrid from './CardGrid.vue'
 
-  import CardGrid from './CardGrid.vue';
-  
-  defineOptions({ 
-    name: 'company-features' 
-  })
+defineOptions({
+  name: 'company-features'
+})
 
-  const props = defineProps({
-    title: { 
-      type: String, 
-      required: true, 
-    },
-    description: { 
-      type: String, 
-      required: true, 
-    },
+const props = defineProps({
+  title: {
+    type: String,
+    required: true
   },
-)
+  description: {
+    type: String,
+    required: true
+  }
+})
 
 const pilars = [
   {
@@ -41,7 +40,8 @@ const pilars = [
   },
   {
     title: 'Rentabilidade',
-    description: 'Reduzir despesas, interpretar custos e definir preços corretamente.',
+    description:
+      'Reduzir despesas, interpretar custos e definir preços corretamente.',
     icon: 'pi pi-wallet'
   },
   {

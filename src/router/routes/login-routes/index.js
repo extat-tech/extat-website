@@ -6,7 +6,7 @@ export const loginRoutes = {
     {
       path: '',
       name: 'login',
-      component: () => import('../../../views/Login/index.vue'),
+      component: () => import('../../../views/Login/index.vue')
     }
   ]
 }

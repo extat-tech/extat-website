@@ -1,37 +1,58 @@
 <template>
-  <section class="px-8 py-24 xl:px-16 flex flex-col justify-center items-center bg-brand-50">
+  <section
+    class="px-8 py-24 xl:px-16 flex flex-col justify-center items-center bg-brand-50"
+  >
     <!-- Container -->
     <div class="flex flex-col gap-16 max-w-7xl items-center w-full">
       <!-- Texts -->
       <div class="flex w-full justify-between gap-10">
         <div class="w-full">
-          <h1 class="text-brand-950 w-full max-w-80 text-4xl font-display font-semibold">{{ title }}</h1>
+          <h1
+            class="text-brand-950 w-full max-w-80 text-4xl font-display font-semibold"
+          >
+            {{ title }}
+          </h1>
         </div>
-        <p class="text-base w-full max-w-[540px] text-gray-950/60">{{ description }}</p>
+        <p class="text-base w-full max-w-[540px] text-gray-950/60">
+          {{ description }}
+        </p>
       </div>
       <!-- Bento Grid -->
-      <div class="grid sm:grid-cols-2 grid-cols-1 grid-row-2 w-full min-h-[524px] gap-10">
-        <div class="first:row-span-2 h-auto flex gap-5" v-for="(service, index) in serviceList" :key="index">
-         <a href="/" class="focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 group w-full p-10 cursor-pointer bg-white hover:bg-brand-700 transition-all flex flex-col justify-between ">
-          <div class="space-y-4 w-full">
-            <h3 class="text-brand-950 group-hover:text-white text-xl font-display font-bold">{{ service.title }}</h3>
-            <p class="text-gray-950/60 group-hover:text-white font-medium">{{ service.description }}</p>
-          </div>
-          <div class="rounded-full border-brand-200 border group-hover:-rotate-45 transition-all w-16 h-16 group-hover:bg-white bg-brand-50 text-brand-700 flex self-end mt-10 justify-center items-center">
-            <i :class="service.icon"></i>
-          </div>
-        </a> 
-        
+      <div
+        class="grid sm:grid-cols-2 grid-cols-1 grid-row-2 w-full min-h-[524px] gap-10"
+      >
+        <div
+          class="first:row-span-2 h-auto flex gap-5"
+          v-for="(service, index) in serviceList"
+          :key="index"
+        >
+          <a
+            href="/"
+            class="focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 group w-full p-10 cursor-pointer bg-white hover:bg-brand-700 transition-all flex flex-col justify-between"
+          >
+            <div class="space-y-4 w-full">
+              <h3
+                class="text-brand-950 group-hover:text-white text-xl font-display font-bold"
+              >
+                {{ service.title }}
+              </h3>
+              <p class="text-gray-950/60 group-hover:text-white font-medium">
+                {{ service.description }}
+              </p>
+            </div>
+            <div
+              class="rounded-full border-brand-200 border group-hover:-rotate-45 transition-all w-16 h-16 group-hover:bg-white bg-brand-50 text-brand-700 flex self-end mt-10 justify-center items-center"
+            >
+              <i :class="service.icon"></i>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<!-- Props and Component Name -->
 <script setup>
-import PrimeButton from 'primevue/button'
-
 defineOptions({
   name: 'featured-services'
 })
@@ -39,15 +60,15 @@ defineOptions({
 const props = defineProps({
   title: {
     type: String,
-    required: true,
+    required: true
   },
   description: {
     type: String,
-    required: true,
+    required: true
   },
   serviceList: {
     type: Array,
-    required: true,
-  },
+    required: true
+  }
 })
 </script>
