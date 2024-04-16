@@ -1,6 +1,5 @@
 <template>
   <header
-    @scroll="manageNavBarAnimations"
     class="transition-all z-10 fixed flex w-full items-center justify-center md:px-8 pl-6 bg-white 0 h-14 md:h-20"
   >
     <div class="flex justify-between items-center max-w-7xl w-full">
@@ -43,22 +42,4 @@ const redirectLogin = () => {
   window.open('https://extat.evolutto.com.br/', '_blank')
 }
 
-let previousScrollTop = 0
-
-const manageNavBarAnimations = () => {
-  const header = document.querySelector('header')
-  const scrollTop = document.documentElement.scrollTop || window.scrollY
-
-  if (scrollTop > previousScrollTop || !previousScrollTop) {
-    header.style.top = '-80px'
-  } else {
-    header.style.top = '0'
-  }
-
-  previousScrollTop = scrollTop
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', manageNavBarAnimations)
-})
 </script>
