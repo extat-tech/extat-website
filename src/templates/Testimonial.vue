@@ -10,7 +10,7 @@
         </h3>
         <div class="grid mt-10 gap-4 w-full md:place-items-center">
           <Avatar
-            image="src/assets/img/avatar.png"
+            image="../src/assets/img/avatar.png"
             class="w-16 h-16"
             size="xlarge"
             shape="circle"
