@@ -5,7 +5,7 @@
       :key="(card, index)"
       class="relative bg-brand-50 w-full h-[268px]"
     >
-      <div class="flex gap-4 p-10 flex-col h-full justify-end">
+      <div class="flex gap-4 p-8 md:p-10 flex-col h-full justify-end">
         <h3 class="text-xl font-bold">{{ card.title }}</h3>
         <p class="font-body font-medium text-gray-950/70">
           {{ card.description }}
