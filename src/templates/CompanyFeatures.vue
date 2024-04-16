@@ -7,7 +7,7 @@
         <h3 class="w-full text-brand-950 text-4xl font-semibold">
           {{ title }}
         </h3>
-        <p class="w-full text-xl text-gray-950/70">{{ description }}</p>
+        <p class="w-full text-gray-950/70">{{ description }}</p>
       </div>
       <CardGrid :cardList="pilars"></CardGrid>
     </div>

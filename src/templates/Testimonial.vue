@@ -1,9 +1,13 @@
 <template>
   <section class="px-8 py-24 xl:px-16 flex justify-center bg-brand-950">
     <!-- Container -->
-    <div class="flex flex-col max-w-7xl justify-start md:justify-center items-center w-full">
+    <div
+      class="flex flex-col max-w-7xl justify-start md:justify-center items-center w-full"
+    >
       <!-- Texts -->
-      <div class="flex flex-col justify-start md:justify-center items-center max-w-4xl">
+      <div
+        class="flex flex-col justify-start md:justify-center items-center max-w-4xl"
+      >
         <!-- Quote -->
         <h3 class="text-white md:text-center text-3xl md:text-5xl">
           {{ quote }}
