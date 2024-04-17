@@ -9,12 +9,12 @@
     title="Metodologia"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
   />
+  <Metrics />
   <FeaturedServices
     title="Outros serviços"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
     :serviceList="featuredServices"
   />
-  <Metrics />
   <Billboard
     title="Faça as melhores decisões para o seu negócio"
     description="Explore nossa expertise e produtos e saiba como ajudamos diferentes empresas com sucesso. Ou entre em contato conosco para agendar uma ligação introdutória."
