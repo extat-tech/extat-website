@@ -23,7 +23,7 @@
           :key="index"
         >
           <a
-            href="/service/consultoria-financeira"
+            href="/consultoriaFinanceira"
             class="focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 group w-full p-8 md:p-10 cursor-pointer bg-white hover:bg-brand-700 transition-all flex flex-col justify-between"
           >
             <div class="space-y-4 w-full">
