@@ -22,10 +22,11 @@
           v-for="(service, index) in serviceList"
           :key="index"
         >
-          <a
-            href="/consultoriaFinanceira"
+          <router-link
+            :to="'/consultoriaFinanceira'"
             class="focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 group w-full p-8 md:p-10 cursor-pointer bg-white hover:bg-brand-700 transition-all flex flex-col justify-between"
           >
+            <!-- Your existing content goes here -->
             <div class="space-y-4 w-full">
               <h3
                 class="text-brand-950 group-hover:text-white text-xl font-bold"
@@ -41,7 +42,7 @@
             >
               <i :class="service.icon"></i>
             </div>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

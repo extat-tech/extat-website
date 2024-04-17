@@ -7,7 +7,7 @@ import { playgroundRoutes } from './routes/playground-routes'
 import { ServiceRoutes } from './routes/service-routes'
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes: [homeRoutes, loginRoutes, playgroundRoutes, ServiceRoutes].concat(
     errorRoutes
   )
