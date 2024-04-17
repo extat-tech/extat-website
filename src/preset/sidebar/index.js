@@ -50,7 +50,7 @@ export default {
         "duration-300",
         { "p-5": !props.position == "full" },
         // Background and Effects
-        { "has-[.mask-active]:bg-transparent dark:has-[.mask-active]:bg-transparent bg-surface-500/70 dark:bg-surface-700/70": props.modal, "has-[.mask-active]:backdrop-blur-none backdrop-blur-sm": props.modal }
+        { "has-[.mask-active]:bg-black/80 dark:has-[.mask-active]:bg-transparent bg-black/80 dark:bg-surface-700/70": props.modal, "has-[.mask-active]:bg-black/80 bg-black-80": props.modal }
       ]
     }),
   transition: ({ props }) => props.position === "top" ? {
