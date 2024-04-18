@@ -1703,6 +1703,7 @@
         <!-- Buttons -->
         <div class="flex flex-col w-full lg:flex-row lg:w-auto gap-3">
           <PrimeButton
+            @click="anchorScroll"            
             class="w-full lg:w-auto"
             size="large"
             label="Nossos serviços"
@@ -1728,6 +1729,13 @@ import PrimeButton from 'primevue/button'
 defineOptions({
   name: 'banner'
 })
+
+const anchorScroll = () => {
+  const element = document.getElementById('anchorScroll')
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
 
 const props = defineProps({
   title: {

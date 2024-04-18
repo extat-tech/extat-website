@@ -6,6 +6,7 @@
   />
   <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
   <FeaturedServices
+    id="anchorScroll"
     title="Nossos serviços em destaque"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
     :serviceList="featuredServices"
@@ -40,6 +41,7 @@ import Footer from '../../templates/Footer.vue'
 defineOptions({
   name: 'home-view'
 })
+
 
 const featuredServices = [
   {

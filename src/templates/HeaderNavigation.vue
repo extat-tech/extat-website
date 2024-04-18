@@ -44,14 +44,17 @@ import Logo from '../components/Logo.vue'
 import PrimeButton from 'primevue/button'
 import SideNavigation from 'primevue/sidebar'
 import Menu from 'primevue/menu'
+import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 defineOptions({
   name: 'header-navigation'
 })
-import { ref } from 'vue'
+
 const visible = ref(false)
-import { useRouter } from 'vue-router'
+
 const router = useRouter()
+
 const redirectLogin = () => {
   window.open('https://extat.evolutto.com.br/', '_blank')
 }

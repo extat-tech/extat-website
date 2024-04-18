@@ -12,6 +12,7 @@
       </div>
       <div class="flex flex-col w-full lg:flex-row lg:w-auto gap-3">
           <PrimeButton
+            @click="redirectToHome"
             class="w-full lg:w-auto"
             size="large"
             label="Nossos serviços"
@@ -42,6 +43,26 @@
 </template>
 
 <script setup>
-import PrimeButton from 'primevue/button'
-import ScheduleCall from '../components/ScheduleCall.vue'
+  import PrimeButton from 'primevue/button'
+  import ScheduleCall from '../components/ScheduleCall.vue'
+  import { useRouter } from 'vue-router'
+
+  const router = useRouter()
+
+  const redirectToHome = () => {
+  router.push({ path: '/' }).then(() => {
+    // Adicionando um pequeno atraso de 100ms antes de rolar para o topo
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+
+      // Adicionando um pequeno atraso de 300ms antes de rolar para a sessão
+      setTimeout(() => {
+        const element = document.getElementById('anchorScroll')
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 300)
+    }, 100)
+  })
+}
 </script>
