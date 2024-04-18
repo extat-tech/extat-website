@@ -1,15 +1,15 @@
 <template>
   <header
-    class="transition-all z-10 fixed flex w-full items-center justify-center md:px-8 pl-8 bg-white 0 h-14 md:h-20"
+    class="transition-all z-10 fixed flex w-full items-center justify-center bg-white pl-8 h-14 shadow-sm border-brand-200"
   >
-    <div class="flex justify-between items-center max-w-7xl w-full">
+    <div class="flex justify-between items-center w-full">
       <!-- Back to Home -->
       <Logo></Logo>
       <!-- Buttons  -->
-      <div class="flex items-center gap-4">
+      <div class="flex items-center">
         <PrimeButton
           size="large"
-          class="hidden h-14 md:block"
+          class="hidden h-[54px] md:block"
           @click="redirectLogin"
           label="Acesso para empresas"
         />
@@ -64,7 +64,8 @@ const items = ref([
     label: 'Serviços',
     items: [
       {
-        label: 'Consultoria financeira'
+        label: 'Consultoria financeira',
+        to: 'service/consultoria-financeira'
       },
       {
         label: 'Indicadores e Métricas Chave'
