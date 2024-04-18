@@ -13,20 +13,20 @@ export default {
         },
         // Shape
         "border-0 dark:border",
-        "shadow-xl",
+        "shadow-none",
         // Colors
         "bg-white dark:bg-surface-800",
         "text-black dark:text-white/80",
         "dark:border-surface-700",
         // Transitions
         "transition-transform",
-        "duration-300",
+        "duration-500",
         // Misc
         "pointer-events-auto"
       ]
     }),
   header: {
-    class: ["flex items-center justify-between", "shrink-0", "px-6 pt-6", "bg-surface-0 dark:bg-surface-800", "text-surface-700 dark:text-surface-0/80"]
+    class: ["flex items-center justify-between", "shrink-0", "min-h-14", "bg-transparent dark:bg-surface-800", "text-surface-700 dark:text-surface-0/80"]
   },
   title: {
     class: ["font-semibold leading-6 text-base m-0"]
@@ -35,13 +35,13 @@ export default {
     class: ["flex items-center"]
   },
   closeButton: {
-    class: ["relative", "flex items-center justify-center", "mr-2", "last:mr-0", "w-6 h-6", "border-0", "rounded-full", "text-surface-500", "bg-transparent", "transition duration-200 ease-in-out", "hover:text-surface-700 dark:hover:text-white/80", "hover:bg-surface-100 dark:hover:bg-surface-800/80", "focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-inset", "focus:ring-primary-500 dark:focus:ring-primary-400", "overflow-hidden"]
+    class: ["relative", "flex items-center justify-center", "mr-2", "last:mr-0", "w-14 h-14", "border-0", "rounded-none", "text-surface-500", "bg-gray-100", "transition duration-200 ease-in-out", "hover:text-surface-700 dark:hover:text-white/80", "hover:bg-surface-100 dark:hover:bg-surface-800/80", "focus:outline-none focus:outline-offset-1 focus:ring-2 focus:ring-inset", "focus:ring-brand-950 dark:focus:ring-primary-400", "overflow-hidden"]
   },
   closeicon: {
-    class: ["inline-block", "w-3", "h-3"]
+    class: ["inline-block", "w-5", "h-5"]
   },
   content: {
-    class: ["px-6 pb-6", "mt-6", "h-full", "w-full", "grow", "overflow-y-auto"]
+    class: ["px-0 pb-0", "mt-6", "h-full", "w-full", "grow", "overflow-y-auto"]
   },
   mask: ({ props }) => ({
       class: [
@@ -50,7 +50,7 @@ export default {
         "duration-300",
         { "p-5": !props.position == "full" },
         // Background and Effects
-        { "has-[.mask-active]:bg-black/80 dark:has-[.mask-active]:bg-transparent bg-black/80 dark:bg-surface-700/70": props.modal, "has-[.mask-active]:bg-black/80 bg-black-80": props.modal }
+        { "has-[.mask-active]:bg-brand-950/90 dark:has-[.mask-active]:bg-brand-950/90 dark:bg-brand-950/90": props.modal, "has-[.mask-active]:bg-brand-950/90 bg-brand-950/90": props.modal }
       ]
     }),
   transition: ({ props }) => props.position === "top" ? {

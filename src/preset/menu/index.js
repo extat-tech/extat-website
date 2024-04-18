@@ -1,11 +1,12 @@
 export default {
     root: {
         class: [
+
             // Sizing and Shape
             'min-w-[12rem]',
             'rounded-none',
             // Spacing
-            'p-1.5',
+            'p-0',
             // Colors
             'bg-trasnparent dark:bg-surface-700',
             'text-surface-700 dark:text-white/80',
@@ -30,21 +31,21 @@ export default {
     content: ({ context }) => ({
         class: [
             //Shape
-            'rounded-md',
+            'rounded-none',
 
             // Colors
             {
-                'text-surface-700 dark:text-surface-0': !context.focused,
-                'bg-surface-100 text-primary-500 dark:bg-surface-300/10 dark:text-primary-400': context.focused
+                'text-brand-950 dark:text-surface-0': !context.focused,
+                'bg-gray-100 text-primary-500 dark:bg-surface-300/10 dark:text-primary-400': context.focused
             },
 
             // Transitions
-            'transition-shadow',
+            'transition-all',
             'duration-200',
 
             // States
-            'hover:text-primary-600 dark:hover:text-primary-400',
-            'hover:bg-surface-100 dark:hover:bg-surface-400/10'
+            'hover:text-black dark:hover:text-primary-400',
+            'hover:bg-gray-100 dark:hover:bg-surface-400/10'
         ]
     }),
     action: {
@@ -59,7 +60,7 @@ export default {
             'items-center',
 
             // Spacing
-            'py-2',
+            'py-3',
             'px-3',
 
             // Misc
@@ -74,21 +75,21 @@ export default {
             // Spacing
             'mr-2',
             'leading-6',
-            'text-sm'
+            'text-base'
         ]
     },
     label: {
-        class: ['leading-6', 'text-sm']
+        class: ['leading-6', 'text-md']
     },
     submenuheader: {
         class: [
             // Font
-            'font-semibold',
+            'font-bold',
             'text-xs leading-6',
 
             // Spacing
-            'm-0 ',
-            'py-1',
+            'mt-4',
+            'py-0',
             'px-3',
 
             // Shape
@@ -96,8 +97,8 @@ export default {
             'rounded-tr-none',
 
             // Colors
-            'bg-surface-0 dark:bg-surface-700',
-            'text-surface-600 dark:text-surface-0/60'
+            'bg-transparent dark:bg-surface-700',
+            'text-brand-950/70 dark:text-surface-0/60'
         ]
     },
     transition: {
