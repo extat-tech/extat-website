@@ -8,12 +8,13 @@
       <!-- Buttons  -->
       <div class="flex items-center gap-4">
         <PrimeButton
-          class="hidden md:block"
+          size="large"
+          class="hidden h-14 md:block"
           @click="redirectLogin"
           label="Acesso para empresas"
         />
         <PrimeButton
-          class="h-14 w-14 md:h-11 md:w-11"
+          class="h-14 w-14"
           severity="secondary"
           icon="pi pi-bars"
           @click="visible = true"
@@ -21,15 +22,20 @@
       </div>
     </div>
   </header>
-  
+
   <!-- Navigation -->
-  <SideNavigation
-    class=""
-    position="right"
-    v-model:visible="visible"
-    header="Em construção"
-  >
-    <Menu :model="items" />
+  <SideNavigation  position="right" v-model:visible="visible" header=" ">
+      <div class="flex flex-col h-full justify-between">
+        <Menu :model="items" />
+        <div class="p-4">
+          <PrimeButton
+          class="w-full"
+          size="large"
+          @click="redirectLogin"
+          label="Acesso para empresas"
+        />
+        </div>
+      </div>
   </SideNavigation>
 </template>
 
@@ -44,13 +50,29 @@ defineOptions({
 })
 import { ref } from 'vue'
 const visible = ref(false)
-
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const redirectLogin = () => {
   window.open('https://extat.evolutto.com.br/', '_blank')
 }
 
 const items = ref([
-  { label: 'New', icon: 'pi pi-plus' },
-  { label: 'Search', icon: 'pi pi-search' }
+  {
+    label: 'Inicio'
+  },
+  {
+    label: 'Serviços',
+    items: [
+      {
+        label: 'Consultoria financeira'
+      },
+      {
+        label: 'Indicadores e Métricas Chave'
+      },
+      {
+        label: 'Treinamentos e Capacitação'
+      }
+    ]
+  }
 ])
 </script>
