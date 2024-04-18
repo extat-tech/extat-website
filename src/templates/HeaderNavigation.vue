@@ -24,18 +24,18 @@
   </header>
 
   <!-- Navigation -->
-  <SideNavigation  position="right" v-model:visible="visible" header=" ">
-      <div class="flex flex-col h-full justify-between">
-        <Menu :model="items" />
-        <div class="p-4">
-          <PrimeButton
+  <SideNavigation position="right" v-model:visible="visible" header=" ">
+    <div class="flex flex-col h-full justify-between">
+      <Menu :model="items" />
+      <div class="p-4">
+        <PrimeButton
           class="w-full"
           size="large"
           @click="redirectLogin"
           label="Acesso para empresas"
         />
-        </div>
       </div>
+    </div>
   </SideNavigation>
 </template>
 
@@ -47,12 +47,7 @@ import Menu from 'primevue/menu'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-defineOptions({
-  name: 'header-navigation'
-})
-
 const visible = ref(false)
-
 const router = useRouter()
 
 const redirectLogin = () => {
@@ -61,20 +56,23 @@ const redirectLogin = () => {
 
 const items = ref([
   {
-    label: 'Inicio'
+    label: 'Inicio',
+    route: '/'
   },
   {
     label: 'Serviços',
     items: [
       {
         label: 'Consultoria financeira',
-        to: 'service/consultoria-financeira'
+        route: '/service/consultoria-financeira'
       },
       {
-        label: 'Indicadores e Métricas Chave'
+        label: 'Indicadores e Métricas Chave',
+        route: '/service/indicadores-metricas'
       },
       {
-        label: 'Treinamentos e Capacitação'
+        label: 'Treinamentos e Capacitação',
+        route: '/service/treinamentos-capacitacao'
       }
     ]
   }
