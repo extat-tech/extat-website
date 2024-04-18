@@ -15,10 +15,15 @@
       </div>
       <!-- Bento Grid -->
       <div
-        class="grid md:grid-cols-2 grid-cols-1 grid-row-2 w-full min-h-[524px] gap-10"
+        :class="{
+          'min-h-auto': serviceList.length !== 3,
+          'min-h-[524px]': serviceList.length === 3
+        }"
+        class="grid md:grid-cols-2 grid-cols-1 w-full gap-10"
       >
         <div
-          class="md:first:row-span-2 h-auto flex gap-5"
+          :class="{'md:first:row-span-2': index === 0 && serviceList.length > 2}"
+          class="h-auto flex gap-5"
           v-for="(service, index) in serviceList"
           :key="index"
         >
@@ -26,7 +31,6 @@
             :to="service.to"
             class="focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 group w-full p-8 md:p-10 cursor-pointer bg-white hover:bg-brand-700 transition-all flex flex-col justify-between"
           >
-            <!-- Your existing content goes here -->
             <div class="space-y-4 w-full">
               <h3
                 class="text-brand-950 group-hover:text-white text-xl font-bold"
