@@ -2,11 +2,5 @@
 export const playgroundRoutes = {
   path: '/playground',
   name: 'playground',
-  children: [
-    {
-      path: '',
-      name: 'playground',
-      component: () => import('../../../views/Playground/index.vue')
-    }
-  ]
+  component: () => import('../../../views/Playground/index.vue')
 }

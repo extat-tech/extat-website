@@ -1,20 +1,20 @@
 <template>
   <HeaderNavigation></HeaderNavigation>
   <ServiceBanner
-    title="Consultoria Financeira"
-    subtitle="Organize, entenda os números e crie processos confiáveis."
+    title="Treinamentos e Capacitação"
+    subtitle="Capacite sua equipe para os desafios financeiros do mercado atual."
   />
   <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
   <CompanyFeatures
     title="Metodologia"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
   />
+  <Metrics />
   <FeaturedServices
     title="Outros serviços"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
     :serviceList="featuredServices"
   />
-  <Metrics />
   <Billboard
     title="Faça as melhores decisões para o seu negócio"
     description="Explore nossa expertise e produtos e saiba como ajudamos diferentes empresas com sucesso. Ou entre em contato conosco para agendar uma ligação introdutória."
@@ -36,13 +36,14 @@ const featuredServices = [
   {
     title: 'Indicadores e Métricas Chave',
     description: 'Crie relatórios financeiros sob demanda para o seu negócio',
-    icon: 'pi pi-arrow-right'
+    icon: 'pi pi-arrow-right',
+    to: 'indicadores-metricas'
   },
   {
     title: 'Treinamentos e Capacitação',
-    description:
-      'Capacite sua equipe para os desafios financeiros do mercado atual.',
-    icon: 'pi pi-arrow-right'
+    description: 'Capacite sua equipe para os desafios financeiros do mercado atual.',
+    icon: 'pi pi-arrow-right',
+    to: 'treinamentos-capacitacao'
   }
 ]
 </script>

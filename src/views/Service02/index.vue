@@ -1,8 +1,8 @@
 <template>
   <HeaderNavigation></HeaderNavigation>
   <ServiceBanner
-    title="Consultoria Financeira"
-    subtitle="Organize, entenda os números e crie processos confiáveis."
+    title="Indicadores e Métricas Chave"
+    subtitle="Crie relatórios financeiros sob demanda para o seu negócio"
   />
   <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
   <CompanyFeatures
@@ -12,7 +12,7 @@
   <FeaturedServices
     title="Outros serviços"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
-    :serviceList="featuredServices"
+    :serviceList="otherServices"
   />
   <Metrics />
   <Billboard
@@ -32,17 +32,18 @@ import Metrics from '../../templates/Metrics.vue'
 import Billboard from '../../templates/Billboard.vue'
 import Footer from '../../templates/Footer.vue'
 
-const featuredServices = [
+const otherServices = [
   {
-    title: 'Indicadores e Métricas Chave',
-    description: 'Crie relatórios financeiros sob demanda para o seu negócio',
-    icon: 'pi pi-arrow-right'
+    title: 'Consultoria Financeira',
+    description: 'Organize, entenda os números e crie processos confiáveis.',
+    icon: 'pi pi-arrow-right',
+    to: 'consultoria-financeira'
   },
   {
     title: 'Treinamentos e Capacitação',
-    description:
-      'Capacite sua equipe para os desafios financeiros do mercado atual.',
-    icon: 'pi pi-arrow-right'
+    description: 'Capacite sua equipe para os desafios financeiros do mercado atual.',
+    icon: 'pi pi-arrow-right',
+    to: 'treinamentos-capacitacao'
   }
 ]
 </script>

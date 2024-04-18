@@ -13,7 +13,7 @@
   <FeaturedServices
     title="Outros serviços"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
-    :serviceList="featuredServices"
+    :serviceList="otherServices"
   />
   <Billboard
     title="Faça as melhores decisões para o seu negócio"
@@ -32,17 +32,18 @@ import Metrics from '../../templates/Metrics.vue'
 import Billboard from '../../templates/Billboard.vue'
 import Footer from '../../templates/Footer.vue'
 
-const featuredServices = [
+const otherServices = [
   {
     title: 'Indicadores e Métricas Chave',
     description: 'Crie relatórios financeiros sob demanda para o seu negócio',
-    icon: 'pi pi-arrow-right'
+    icon: 'pi pi-arrow-right',
+    to: 'indicadores-metricas'
   },
   {
     title: 'Treinamentos e Capacitação',
-    description:
-      'Capacite sua equipe para os desafios financeiros do mercado atual.',
-    icon: 'pi pi-arrow-right'
+    description: 'Capacite sua equipe para os desafios financeiros do mercado atual.',
+    icon: 'pi pi-arrow-right',
+    to: 'treinamentos-capacitacao'
   }
 ]
 </script>

@@ -2,11 +2,5 @@
 export const homeRoutes = {
   path: '/',
   name: 'home',
-  children: [
-    {
-      path: '',
-      name: 'home',
-      component: () => import('../../../views/Home/index.vue')
-    }
-  ]
+  component: () => import('../../../views/Home/index.vue')
 }

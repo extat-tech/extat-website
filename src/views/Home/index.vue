@@ -52,14 +52,13 @@ const featuredServices = [
     title: 'Indicadores e Métricas Chave',
     description: 'Crie relatórios financeiros sob demanda para o seu negócio',
     icon: 'pi pi-arrow-right',
-    to: 'service/consultoria-financeira'
+    to: 'service/indicadores-metricas'
   },
   {
     title: 'Treinamentos e Capacitação',
-    description:
-      'Capacite sua equipe para os desafios financeiros do mercado atual.',
+    description: 'Capacite sua equipe para os desafios financeiros do mercado atual.',
     icon: 'pi pi-arrow-right',
-    to: 'service/consultoria-financeira'
+    to: 'service/treinamentos-capacitacao'
   }
 ]
 </script>
