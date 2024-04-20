@@ -1,7 +1,10 @@
 const contentBanner = {
-  title: 'Cresça seu negócio e equalize suas financas',
-  description:
-    'A Extat é uma consultoria empresarial que acelera o crescimento de negócios, implementando processos, ferramentas e estratégias inovadoras.'
+  title: {
+    inicioTitulo: 'Tenha clareza no seu financeiro, torne sua empresa mais',
+    mensagemMarcada: ' lucrativa ',
+    finalTitulo: 'e cresça exponencialmente'
+    },
+  description:'Somos especialistas em entender sua realidade e desenvolver um projeto de acordo com o que você precisa.'
 }
 
 export { contentBanner }

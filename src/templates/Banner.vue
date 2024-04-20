@@ -1690,26 +1690,27 @@
     >
       <!-- Texts -->
       <div
-        class="flex flex-col items-start w-full xl:text-left gap-6 lg:gap-10"
+        class="flex flex-col items-start max-w-screen-sm w-full xl:text-left gap-6 lg:gap-10"
       >
         <h1
-          class="w-full lg:max-w-3xl text-4xl lg:text-6xl text-brand-950 font-semibold"
+          class="w-full lg:max-w-3xl lg:text-4xl text-2xl text-brand-950 font-semibold"
         >
-          {{ title }}
+          {{ title.inicioTitulo }}
+          <span class="text-brand-700 font-bold">{{ title.mensagemMarcada }}</span>
+          {{ title.finalTitulo }}
         </h1>
-        <p class="text-xl w-full md:max-w-2xl text-gray-950/70">
+        <p class="lg:text-xl w-full md:max-w-2xl text-gray-950/70">
           {{ description }}
         </p>
         <!-- Buttons -->
-        <div class="flex flex-col w-full lg:flex-row lg:w-auto gap-3">
+        <div class="flex flex-col w-full sm:w-auto lg:flex-row lg:w-auto gap-3">
           <PrimeButton
-            @click="anchorScroll"            
-            class="w-full lg:w-auto"
+            class="w-full"
             size="large"
-            label="Nossos serviços"
-            severity="secondary"
+            label="Quero organizar meu financeiro"
+            icon="pi pi-arrow-right"
+            iconPos="right"
           />
-          <ScheduleCall />
         </div>
       </div>
       <img
@@ -1723,7 +1724,6 @@
 </template>
 
 <script setup>
-import ScheduleCall from '../components/ScheduleCall.vue'
 import PrimeButton from 'primevue/button'
 
 defineOptions({
