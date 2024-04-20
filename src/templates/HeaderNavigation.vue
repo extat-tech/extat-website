@@ -26,8 +26,14 @@
   <!-- Navigation -->
   <SideNavigation position="right" v-model:visible="visible" header=" ">
     <div class="flex flex-col h-full justify-between">
-      <Menu :model="items" />
-      <div class="p-4">
+      <Menu :model="items">
+        <template #item ="{item, props}">
+          <router-link :to="item.route">
+            <span class="flex items-center py-3 px-3 font-semibold">{{ item.label }}</span>
+          </router-link>
+        </template>
+      </Menu>
+      <div class="">
         <PrimeButton
           class="w-full"
           size="large"
