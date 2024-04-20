@@ -4,7 +4,7 @@
     :title="contentBanner.title"
     :description="contentBanner.description"
   />
-  <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
+  <SocialProof title="Conheça as empresas que com a nossa ajuda, conseguem ter um resultado financeiro claro" />
   <FeaturedServices
     id="anchorScroll"
     title="Nossos serviços em destaque"
