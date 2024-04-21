@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-brand-950 relative flex justify-center px-8 pt-[152px] pb-24 xl:px-16"
+    class="bg-brand-950 relative flex justify-center px-6 pt-[152px] pb-24 xl:px-16"
   >
     <svg
       class="absolute hidden md:block -end-20 lg:end-0 -bottom-40 md:bottom-0"

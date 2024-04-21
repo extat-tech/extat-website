@@ -1,14 +1,14 @@
 <template>
   <section
-    class="px-8 py-24 xl:px-16 flex flex-col justify-center items-center bg-brand-50"
+    class="px-6 py-24 xl:px-16 flex flex-col justify-center items-center bg-brand-50"
   >
     <!-- Container -->
     <div class="flex flex-col gap-16 max-w-7xl items-center w-full">
       <!-- Texts -->
-      <div class="grid sm:grid-cols-2 w-full justify-between gap-10">
-        <h1 class="text-brand-950 w-full max-w-80 text-4xl font-semibold">
+      <div class="grid md:grid-cols-2 w-full justify-between gap-6 lg:gap-10">
+        <h2 class="text-brand-950 w-full max-w-80 lg:max-w-3xl md:text-4xl text-2xl font-semibold">
           {{ title }}
-        </h1>
+        </h2>
         <p class="text-base w-full max-w-[540px] text-gray-950/70">
           {{ description }}
         </p>
@@ -19,7 +19,7 @@
           'min-h-auto': serviceList.length !== 3,
           'min-h-[524px]': serviceList.length === 3
         }"
-        class="grid md:grid-cols-2 grid-cols-1 w-full gap-10"
+        class="grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 w-full gap-10"
       >
         <div
           :class="{'md:first:row-span-2': index === 0 && serviceList.length > 2}"
@@ -29,15 +29,15 @@
         >
           <router-link
             :to="service.to"
-            class="focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 group w-full p-8 md:p-10 cursor-pointer bg-white hover:bg-brand-700 transition-all flex flex-col justify-between"
+            class="focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 group w-full p-6 md:p-10 cursor-pointer bg-white hover:bg-brand-700 transition-all flex flex-col justify-between"
           >
             <div class="space-y-4 w-full">
               <h3
-                class="text-brand-950 group-hover:text-white text-xl font-bold"
+                class="text-brand-900 group-hover:text-white md:text-xl font-bold"
               >
                 {{ service.title }}
               </h3>
-              <p class="text-gray-950/70 group-hover:text-white font-medium">
+              <p class="text-gray-950/70 group-hover:text-white text-sm md:text-base">
                 {{ service.description }}
               </p>
             </div>

@@ -7,11 +7,11 @@ export default {
       'items-center justify-center inline-flex text-center align-bottom',
 
       // Sizes & Spacing
-      'text-md',
+      'text-sm',
       {
         'px-4 h-10 min-w-[2rem]': props.size === null,
         'px-2 py-1': props.size === 'small',
-        'px-6 h-12': props.size === 'large'
+        'px-6 h-12 text-md gap-4': props.size === 'large'
       },
       {
         'w-10 h-10 p-0': props.label == null && props.icon !== null
@@ -440,7 +440,7 @@ export default {
   }),
   icon: ({ props }) => ({
     class: [
-      'mx-0',
+      'mx-0 text-xl',
       {
         'mr-2': props.iconPos == 'left' && props.label != null,
         'ml-2 order-1': props.iconPos == 'right' && props.label != null,

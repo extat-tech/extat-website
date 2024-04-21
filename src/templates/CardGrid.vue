@@ -3,11 +3,11 @@
     <div
       v-for="(card, index) in cardList"
       :key="(card, index)"
-      class="relative bg-brand-50 w-full h-[268px]"
+      class="relative bg-brand-50 w-full md:h-[268px]"
     >
-      <div class="flex gap-4 p-8 md:p-10 flex-col h-full justify-end">
-        <h3 class="text-xl font-bold">{{ card.title }}</h3>
-        <p class="font-body font-medium text-gray-950/70">
+      <div class="flex gap-4 p-10 md:p-10 flex-col h-full justify-end">
+        <h3 class="mt-7 text-brand-900 group-hover:text-white md:text-xl font-bold">{{ card.title }}</h3>
+        <p class=" h-16 text-gray-950/70 group-hover:text-white text-sm md:text-base">
           {{ card.description }}
         </p>
       </div>

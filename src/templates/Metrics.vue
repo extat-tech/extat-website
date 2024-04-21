@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-8 py-24 flex flex-col justify-center items-center gap-20 bg-white"
+    class="px-6 py-24 flex flex-col justify-center items-center gap-20 bg-white"
   >
     <div class="flex w-full max-w-screen-xl flex-wrap justify-between gap-20">
       <div class="flex flex-col gap-5 max-w-xl">

@@ -1,5 +1,5 @@
 <template>
-  <section class="px-8 pt-[152px] pb-24 xl:px-16 flex justify-center bg-white">
+  <section class="px-6 pt-[152px] pb-24 xl:px-16 flex justify-center bg-white">
     <svg
       class="absolute hidden xl:block ml-auto sm:end-40 sm:-top-[120px]"
       width="298"
@@ -1693,13 +1693,15 @@
         class="flex flex-col items-start max-w-screen-sm w-full xl:text-left gap-6 lg:gap-10"
       >
         <h1
-          class="w-full lg:max-w-3xl lg:text-4xl text-2xl text-brand-950 font-semibold"
+          class="w-full lg:max-w-3xl md:text-4xl text-2xl text-brand-950 font-semibold"
         >
           {{ title.inicioTitulo }}
-          <span class="text-brand-700 font-bold">{{ title.mensagemMarcada }}</span>
+          <span class="text-brand-700 font-bold">{{
+            title.mensagemMarcada
+          }}</span>
           {{ title.finalTitulo }}
         </h1>
-        <p class="lg:text-xl w-full md:max-w-2xl text-gray-950/70">
+        <p class="md:text-xl w-full md:max-w-2xl text-gray-950/70">
           {{ description }}
         </p>
         <!-- Buttons -->
@@ -1730,12 +1732,6 @@ defineOptions({
   name: 'banner'
 })
 
-const anchorScroll = () => {
-  const element = document.getElementById('anchorScroll')
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
-  }
-}
 
 const props = defineProps({
   title: {

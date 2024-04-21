@@ -1,5 +1,5 @@
 <template>
-  <section class="px-8 py-24 flex justify-center bg-white">
+  <section class="px-6 py-24 flex justify-center bg-white">
     <!-- Container -->
     <div class="flex flex-col-reverse xl:flex-row max-w-screen-xl">
       <img
@@ -10,19 +10,27 @@
       />
       <!-- Texts -->
       <div
-        class="flex flex-col bg-brand-700 p-10 xl:p-16 items-start justify-center gap-6 md:gap-10"
+        class="flex flex-col bg-brand-700 p-6 xl:p-16 items-start justify-center gap-6 md:gap-10"
       >
-        <h3 class="text-white text-2xl md:text-4xl font-medium">
+        <h3 class="text-white w-full lg:max-w-3xl md:text-4xl text-2xl font-semibold">
           {{ title }}
         </h3>
         <p class="text-white/80">{{ description }}</p>
-        <ScheduleCall class="w-full md:w-fit" severity="secondary" />
+        <PrimeButton
+            severity="secondary"
+            class="w-full md:w-fit"
+            size="large"
+            label="Quero organizar meu financeiro"
+            icon="pi pi-arrow-right"
+            iconPos="right"
+          />
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import PrimeButton from 'primevue/button';
 import ScheduleCall from '../components/ScheduleCall.vue'
 
 defineOptions({

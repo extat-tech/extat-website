@@ -1,14 +1,15 @@
 <template>
-  <footer class="flex flex-col justify-center items-center bg-gray-950">
-    <div
-      class="px-8 md:px-16 py-16 grid grid-cols-2 xl:grid-cols-3 gap-10 max-w-7xl w-full"
-    >
+  <footer
+    class="flex flex-col w-full justify-center items-center px-6 pt-24 xl:px-16 bg-brand-950"
+  >
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10 max-w-7xl w-full">
       <div class="">
-        <span class="uppercase w-full text-gray-500"
+        <span class="font-bold w-full text-xs text-brand-100/50"
           >Links rápidos
           <ul>
             <li>
               <PrimeButton
+                @click="redirectHome"
                 class="!px-0 rounded-sm !py-0 text-gray-50"
                 link
                 label="Inicio"
@@ -16,9 +17,28 @@
             </li>
             <li>
               <PrimeButton
+                @click="redirectToConsultoriaFinanceira"
                 class="!px-0 rounded-sm !py-0 text-gray-50"
                 link
-                label="Serviços"
+                label="Consultoria Financeira"
+              >
+              </PrimeButton>
+            </li>
+            <li>
+              <PrimeButton
+                @click="redirectToIndicadoresMetricas"
+                class="!px-0 rounded-sm !py-0 text-gray-50"
+                link
+                label="Indicadores e Métricas Chave"
+              >
+              </PrimeButton>
+            </li>
+            <li>
+              <PrimeButton
+                @click="redirectToTreinamentosCapacitacao"
+                class="!px-0 rounded-sm !py-0 text-gray-50"
+                link
+                label="Treinamentos e Capacitação"
               >
               </PrimeButton>
             </li>
@@ -26,7 +46,7 @@
         </span>
       </div>
       <div class="">
-        <span class="uppercase w-full text-gray-500"
+        <span class="font-bold w-full text-xs text-brand-100/50"
           >Social
           <ul>
             <li>
@@ -40,145 +60,65 @@
           </ul>
         </span>
       </div>
-      <div class="">
-        <span class="uppercase w-full text-gray-500"
-          >Contato
-          <ul>
-            <li>
-              <PrimeButton
-                class="!px-0 rounded-sm !py-0 text-gray-50"
-                link
-                label="+55 98 99999-9999"
-              >
-              </PrimeButton>
-            </li>
-            <li>
-              <PrimeButton
-                class="!px-0 rounded-sm !py-0 text-gray-50"
-                link
-                label="contato@extat.com.br"
-              >
-              </PrimeButton>
-            </li>
-          </ul>
-        </span>
-      </div>
+      <span class="font-bold w-full text-xs text-brand-100/50"
+        >Contato
+        <ul>
+          <li>
+            <PrimeButton
+              class="!px-0 rounded-sm !py-0 text-gray-50"
+              link
+              label="+55 9 9999-9999"
+            >
+            </PrimeButton>
+          </li>
+          <li>
+            <PrimeButton
+              class="!px-0 rounded-sm !py-0 text-gray-50"
+              link
+              label="contato@extat.com.br"
+            >
+            </PrimeButton>
+          </li>
+        </ul>
+      </span>
     </div>
-    <div
-      class="px-8 md:px-16 pt-16 flex justify-center flex-col max-w-7xl w-full"
-    >
-      <span class="text-xs w-full text-center text-gray-500"
+    <div class="pt-16 flex gap-6 flex-col max-w-7xl w-full">
+      <span class="text-xs w-full text-gray-500"
         >© 2024 Extat. | Todos os direitos reservados</span
       >
       <svg
-        class="w-full mt-10 max-h-full"
+        class="w-full opacity-40"
         width="1278"
-        height="120"
-        viewBox="0 0 1278 220"
+        viewBox="0 0 1278 291"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_169_5590)">
-          <g opacity="0.2">
-            <path
-              d="M226.911 209.104C217.895 217.152 194.441 246.043 131.596 234.608C102.891 229.391 83.3752 208.165 77.5596 183.729L287.395 183.695C288.348 181.587 288.2 179.278 288.698 176.519C299.797 99.8529 248.473 27.7952 171.754 13.8358C92.8315 -0.521105 17.8134 51.4072 3.45644 130.334C0.242059 147.997 0.337868 166.258 4.05524 183.47C15.4373 243.13 64.75 288.591 119.95 298.632C215.984 316.103 273.79 251.288 281.071 239.499L226.911 209.104ZM80.6255 119.853C92.1177 91.1535 121.828 72.0396 151.481 75.1534C180.683 77.6109 206.264 99.9439 214.695 128.849L77.3632 128.38L80.6255 119.853Z"
-              fill="url(#paint0_linear_169_5590)"
-            />
-            <path
-              d="M973.768 15.9396V34.4498C951.324 19.8677 924.397 11.4509 895.789 11.4509C815.568 11.4509 751.056 76.5243 751.056 156.184C751.056 235.845 815.568 300.923 895.789 300.923C924.397 300.923 951.324 292.506 973.768 277.919V296.434H1045.57V15.9396H973.768ZM898.031 233.603C855.961 233.603 825.106 201.066 825.106 156.184C825.106 111.308 855.961 78.771 898.031 78.771C940.105 78.771 973.768 111.308 973.768 156.184C973.768 201.066 940.105 233.603 898.031 233.603Z"
-              fill="url(#paint1_linear_169_5590)"
-            />
-            <path
-              d="M753.884 15.9684V80.4813H687.689V296.463H615.704V80.4813H549.509V15.9684H753.884Z"
-              fill="url(#paint2_linear_169_5590)"
-            />
-            <path
-              d="M1277.31 15.9684V80.4813H1211.12V296.401H1139.14V80.4813H1072.95V15.9684H1277.31Z"
-              fill="url(#paint3_linear_169_5590)"
-            />
-            <path
-              d="M538.705 297.569L446.134 154.508L534.776 17.0557H457.358L407.423 94.4739V213.416L461.842 297.569H538.705Z"
-              fill="url(#paint4_linear_169_5590)"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M279.747 17.0748L356.682 17.0557L407.149 94.4309L445.884 154.503L407.173 213.416L352.754 297.57H275.331L368.461 153.943L279.747 17.0748Z"
-              fill="url(#paint5_linear_169_5590)"
-            />
-          </g>
+        <g opacity="0.2">
+          <path
+            d="M226.68 197.653C217.664 205.701 194.21 234.592 131.365 223.157C102.66 217.94 83.1442 196.714 77.3286 172.278L287.164 172.244C288.117 170.136 287.969 167.827 288.467 165.068C299.566 88.402 248.242 16.3442 171.523 2.38491C92.6005 -11.972 17.5824 39.9563 3.22548 118.884C0.0111023 136.546 0.106911 154.807 3.82429 172.019C15.2063 231.679 64.519 277.14 119.719 287.181C215.753 304.652 273.559 239.837 280.841 228.048L226.68 197.653ZM80.3945 108.402C91.8868 79.7026 121.597 60.5887 151.25 63.7025C180.452 66.16 206.033 88.493 214.464 117.399L77.1322 116.929L80.3945 108.402Z"
+            fill="#0042FF"
+          />
+          <path
+            d="M973.537 4.48864V22.9989C951.093 8.41682 924.166 0 895.558 0C815.337 0 750.825 65.0733 750.825 144.734C750.825 224.394 815.337 289.472 895.558 289.472C924.166 289.472 951.093 281.055 973.537 266.468V284.983H1045.34V4.48864H973.537ZM897.8 222.152C855.73 222.152 824.875 189.615 824.875 144.734C824.875 99.8567 855.73 67.3201 897.8 67.3201C939.874 67.3201 973.537 99.8567 973.537 144.734C973.537 189.615 939.874 222.152 897.8 222.152Z"
+            fill="#0042FF"
+          />
+          <path
+            d="M753.652 4.5175V69.0304H687.458V285.012H615.473V69.0304H549.278V4.5175H753.652Z"
+            fill="#0042FF"
+          />
+          <path
+            d="M1277.08 4.5175V69.0304H1210.89V284.95H1138.91V69.0304H1072.72V4.5175H1277.08Z"
+            fill="#0042FF"
+          />
+          <path
+            d="M538.474 286.12L445.653 143.054L534.546 5.6065H457.127L407.192 83.0248L445.653 143.054L407.192 201.967L461.611 286.12H538.474Z"
+            fill="#0042FF"
+          />
+          <path
+            d="M279.516 5.62567L356.451 5.6065L406.918 82.9817L445.653 143.054L406.942 201.967L352.522 286.12H275.1L368.23 142.493L279.516 5.62567Z"
+            fill="#103B9F"
+          />
         </g>
-        <defs>
-          <linearGradient
-            id="paint0_linear_169_5590"
-            x1="1.1499"
-            y1="156.526"
-            x2="1277.31"
-            y2="156.526"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#999999" />
-          </linearGradient>
-          <linearGradient
-            id="paint1_linear_169_5590"
-            x1="1.1499"
-            y1="156.526"
-            x2="1277.31"
-            y2="156.526"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#999999" />
-          </linearGradient>
-          <linearGradient
-            id="paint2_linear_169_5590"
-            x1="1.1499"
-            y1="156.526"
-            x2="1277.31"
-            y2="156.526"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#999999" />
-          </linearGradient>
-          <linearGradient
-            id="paint3_linear_169_5590"
-            x1="1.1499"
-            y1="156.526"
-            x2="1277.31"
-            y2="156.526"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#999999" />
-          </linearGradient>
-          <linearGradient
-            id="paint4_linear_169_5590"
-            x1="407.423"
-            y1="157.313"
-            x2="538.705"
-            y2="157.313"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#999999" />
-          </linearGradient>
-          <linearGradient
-            id="paint5_linear_169_5590"
-            x1="275.331"
-            y1="157.313"
-            x2="445.884"
-            y2="157.313"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#F4F4F4" />
-            <stop offset="1" stop-color="#8E8E8E" />
-          </linearGradient>
-          <clipPath id="clip0_169_5590">
-            <rect width="1278" height="220" fill="white" />
-          </clipPath>
-        </defs>
       </svg>
     </div>
   </footer>
@@ -186,8 +126,27 @@
 
 <script setup>
 import PrimeButton from 'primevue/button'
+import { useRouter } from 'vue-router'
 
 defineOptions({
   name: 'footer'
 })
+
+const redirectHome = () => {
+  window.location.href = '/'
+}
+
+const router = useRouter()
+
+const redirectToConsultoriaFinanceira = () => {
+  window.location.href = '/service/consultoria-financeira'
+}
+
+const redirectToIndicadoresMetricas = () => {
+  window.location.href = '/service/indicadores-metricas'
+}
+
+const redirectToTreinamentosCapacitacao = () => {
+  window.location.href = '/service/treinamentos-capacitacao'
+}
 </script>
