@@ -1,19 +1,17 @@
 <template>
   <section
-    class="px-6 pt-[152px] pb-24 xl:px-16 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900"
+    class="pt-32 pb-10 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900"
   >
     <!-- Container -->
     <div
-      class="grid grid-cols-1 lg:grid-cols-2 place-content-start lg:place-items-center gap-20 max-w-7xl w-full"
+      class="max-w-screen-xl px-6 w-full"
     >
       <!-- Texts -->
       <div
-        class="flex  items-center max-w-screen-sm w-full xl:text-left gap-6 lg:gap-10"
+        class="flex flex-col items-start w-full xl:text-left gap-6 lg:gap-10"
       >
         <svg
-          width="72"
-          height="76"
-          viewBox="0 0 72 76"
+          class="w-20 h-20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -29,7 +27,7 @@
         </svg>
 
         <h1
-          class="w-full lg:max-w-3xl md:text-4xl text-2xl text-white font-semibold"
+          class="md:text-4xl text-2xl text-white font-semibold"
         >
           {{ title }}
         </h1>

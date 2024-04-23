@@ -8,7 +8,7 @@ export default {
             // Spacing
             'p-0',
             // Colors
-            'bg-trasnparent dark:bg-surface-700',
+            'bg-transparent dark:bg-surface-700',
             'text-surface-700 dark:text-white/80',
             'ring-0 dark:ring-surface-700'
         ]
@@ -25,7 +25,7 @@ export default {
     menuitem: {
         class: [
             // Space
-            'first:mt-0 mt-1'
+            'first:mt-0 mt-2 last:mt-2'
         ]
     },
     content: ({ context }) => ({

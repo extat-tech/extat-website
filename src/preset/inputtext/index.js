@@ -10,15 +10,15 @@ export default {
             // Spacing
             'm-0',
             {
-              'py-3 px-4 text-lg sm:text-md': props.size == 'large',
-              'py-1 px-2 sm:text-sm': props.size == 'small',
-              'py-2 px-2 sm:text-sm': props.size == null
+              'py-2.5 px-4 text-sm ': props.size == 'large',
+              'py-2 px-2': props.size == 'small',
+              'py-1 px-2': props.size == null
             },
             // Colors
             'text-brand-950 dark:text-surface-0',
             'placeholder:text-brand-950/70 dark:placeholder:text-surface-500',
             'bg-gray-50 dark:bg-surface-900',
-            'shadow-sm',
+            'shadow-none',
             { 'ring-1 ring-inset ring-offset-0': parent.instance.$name !== 'InputGroup' },
             { 'ring-gray-200 dark:ring-surface-700': !props.invalid },
             // Invalid State
@@ -31,7 +31,7 @@ export default {
             'appearance-none',
             // Interactions
             {
-              ' transition-all outline-none hover:ring-brand-700 hover:bg-brand-50 focus:ring-brand-950 focus:outline-2 focus:outline-offset-0 focus:ring-2 dark:focus:ring-primary-400': !context.disabled,
+              ' transition-all outline-none hover:ring-brand-700 hover:ring-2  hover:bg-brand-50 focus:ring-brand-950 focus:outline-2 focus:outline-offset-2 focus:ring-2 dark:focus:ring-primary-400 focus:ring-2': !context.disabled,
               ' transition-all opacity-60 select-none pointer-events-none cursor-default': context.disabled
             },
             // Filled State *for FloatLabel

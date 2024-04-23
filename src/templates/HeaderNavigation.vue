@@ -27,7 +27,7 @@
   <SideNavigation position="right" v-model:visible="visible" header=" ">
     <div class="flex flex-col h-full justify-between">
       <Menu :model="items">
-        <template #item ="{item, props}">
+        <template #item ="{item}">
           <router-link :to="item.route">
             <span class="flex items-center py-3 px-3 font-semibold">{{ item.label }}</span>
           </router-link>
@@ -51,10 +51,8 @@ import PrimeButton from 'primevue/button'
 import SideNavigation from 'primevue/sidebar'
 import Menu from 'primevue/menu'
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
 
 const visible = ref(false)
-const router = useRouter()
 
 const redirectLogin = () => {
   window.open('https://extat.evolutto.com.br/', '_blank')
@@ -64,6 +62,10 @@ const items = ref([
   {
     label: 'Inicio',
     route: '/'
+  },
+  {
+    label: 'Contato',
+    route: '/contato'
   },
   {
     label: 'Serviços',
