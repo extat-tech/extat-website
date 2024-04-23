@@ -1,8 +1,8 @@
 <template>
   <HeaderNavigation></HeaderNavigation>
   <ServiceBanner
-    title="Consultoria Financeira"
-    subtitle="Organize, entenda os números e crie processos confiáveis."
+    title="Reestruturação Financeira"
+    subtitle="Oferecemos Reestruturação Financeira completa, incluindo diagnóstico financeiro, análise de mercado, planejamento financeiro e estruturação de fluxos de trabalho. Nosso objetivo é impulsionar o seu negócio com resultados tangíveis."
   />
   <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
   <CompanyFeatures

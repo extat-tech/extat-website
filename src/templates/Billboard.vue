@@ -17,6 +17,7 @@
         </h3>
         <p class="text-white/80">{{ description }}</p>
         <PrimeButton
+            @click="redirectToContact"
             severity="secondary"
             class="w-full md:w-fit"
             size="large"
@@ -31,7 +32,10 @@
 
 <script setup>
 import PrimeButton from 'primevue/button';
-import ScheduleCall from '../components/ScheduleCall.vue'
+
+const redirectToContact = () => {
+  window.location.href = '/contato';
+}
 
 defineOptions({
   name: 'company-features'

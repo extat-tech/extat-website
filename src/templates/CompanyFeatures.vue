@@ -9,6 +9,7 @@
         </h2>
         <p class="w-full text-gray-950/70">{{ description }}</p>
         <PrimeButton
+            @click="redirectToContact"
             class="w-full md:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
@@ -28,6 +29,10 @@ import PrimeButton from 'primevue/button'
 defineOptions({
   name: 'company-features'
 })
+
+const redirectToContact = () => {
+  window.location.href = '/contato';
+}
 
 const props = defineProps({
   title: {

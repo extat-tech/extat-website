@@ -71,7 +71,7 @@ const items = ref([
     label: 'Serviços',
     items: [
       {
-        label: 'Consultoria financeira',
+        label: 'Reestruturação Financeira',
         route: '/service/consultoria-financeira'
       },
       {

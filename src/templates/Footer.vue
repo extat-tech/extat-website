@@ -20,7 +20,7 @@
                 @click="redirectToConsultoriaFinanceira"
                 class="!px-0 rounded-sm !py-0 text-gray-50"
                 link
-                label="Consultoria Financeira"
+                label="Reestruturação Financeira"
               >
               </PrimeButton>
             </li>

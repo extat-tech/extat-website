@@ -1693,7 +1693,7 @@
         class="flex flex-col items-start max-w-screen-sm w-full xl:text-left gap-6 lg:gap-10"
       >
         <h1
-          class="w-full lg:max-w-3xl md:text-4xl text-2xl text-brand-950 font-semibold"
+          class="w-full lg:max-w-3xl md:text-4xl 2xl:text-5xl text-2xl text-brand-950 font-semibold"
         >
           {{ title.inicioTitulo }}
           <span class="text-brand-700 font-bold">{{
@@ -1707,6 +1707,7 @@
         <!-- Buttons -->
         <div class="flex flex-col w-full sm:w-auto lg:flex-row lg:w-auto gap-3">
           <PrimeButton
+            @click="redirectToContact"
             class="w-full"
             size="large"
             label="Quero organizar meu financeiro"
@@ -1732,6 +1733,9 @@ defineOptions({
   name: 'banner'
 })
 
+const redirectToContact = () => {
+  window.location.href = '/contato';
+}
 
 const props = defineProps({
   title: {

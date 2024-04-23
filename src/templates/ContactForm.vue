@@ -17,7 +17,7 @@
       </div>
       <div class="flex items-center gap-4">
         <img
-          class="aspect-square w-10 h-10"
+          class="aspect-square w-12 h-12"
           src="/src/assets/img/jozerly.png"
           alt=""
           srcset=""

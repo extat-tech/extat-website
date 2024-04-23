@@ -2,7 +2,7 @@
   <HeaderNavigation></HeaderNavigation>
   <ServiceBanner
     title="Treinamentos e Capacitação"
-    subtitle="Capacite sua equipe para os desafios financeiros do mercado atual."
+    subtitle="Capacite sua equipe para enfrentar os desafios financeiros do mercado atual com nossos programas de treinamento e capacitação. Oferecemos cursos especializados para aprimorar as habilidades financeiras de sua equipe e prepará-la para o sucesso em um ambiente competitivo."
   />
   <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
   <CompanyFeatures
@@ -35,13 +35,13 @@ import Footer from '../../templates/Footer.vue'
 const featuredServices = [
   {
     title: 'Indicadores e Métricas Chave',
-    description: 'Crie relatórios financeiros sob demanda para o seu negócio',
+    description: 'Com nossa expertise em indicadores e métricas chave, fornecemos relatórios financeiros personalizados sob demanda para o seu negócio. Mantenha-se informado e tome decisões estratégicas com base em dados precisos e relevantes.',
     icon: 'pi pi-arrow-right',
     to: 'indicadores-metricas'
   },
   {
     title: 'Treinamentos e Capacitação',
-    description: 'Capacite sua equipe para os desafios financeiros do mercado atual.',
+    description: 'Capacite sua equipe para enfrentar os desafios financeiros do mercado atual com nossos programas de treinamento e capacitação. Oferecemos cursos especializados para aprimorar as habilidades financeiras de sua equipe e prepará-la para o sucesso em um ambiente competitivo.',
     icon: 'pi pi-arrow-right',
     to: 'treinamentos-capacitacao'
   }

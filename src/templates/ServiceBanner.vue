@@ -1708,13 +1708,20 @@
           {{ subtitle }}
         </p>
       </div>
-      <ScheduleCall />
+      <PrimeButton
+        @click="redirectToContact"
+        class="w-full sm:w-fit"
+        size="large"
+        label="Quero organizar meu financeiro"
+        icon="pi pi-arrow-right"
+        iconPos="right"
+      />
     </div>
   </div>
 </template>
 
 <script setup>
-import ScheduleCall from '../components/ScheduleCall.vue'
+import PrimeButton from 'primevue/button';
 
 defineOptions({
   name: 'service-banner'

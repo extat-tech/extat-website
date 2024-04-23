@@ -1,5 +1,5 @@
 <template>
-  <section class="px-6 py-24 xl:px-16 flex justify-center bg-brand-950">
+  <section class="px-6 py-24 xl:px-16 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900">
     <!-- Container -->
     <div
       class="flex flex-col max-w-7xl justify-start md:justify-center items-center w-full"

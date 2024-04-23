@@ -1,6 +1,6 @@
 <template>
   <section
-    class="pt-32 pb-10 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900"
+  class="pt-32 pb-10 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900"
   >
     <!-- Container -->
     <div
@@ -10,7 +10,7 @@
       <div
         class="flex flex-col items-start w-full xl:text-left gap-6 lg:gap-10"
       >
-        <svg
+      <svg
           class="w-20 h-20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,6 @@
             fill-opacity="0.6"
           />
         </svg>
-
         <h1
           class="md:text-4xl text-2xl text-white font-semibold"
         >

@@ -2,7 +2,7 @@
   <HeaderNavigation></HeaderNavigation>
   <ServiceBanner
     title="Indicadores e Métricas Chave"
-    subtitle="Crie relatórios financeiros sob demanda para o seu negócio"
+    subtitle="Com nossa expertise em indicadores e métricas chave, fornecemos relatórios financeiros personalizados sob demanda para o seu negócio. Mantenha-se informado e tome decisões estratégicas com base em dados precisos e relevantes."
   />
   <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
   <CompanyFeatures
@@ -34,14 +34,14 @@ import Footer from '../../templates/Footer.vue'
 
 const otherServices = [
   {
-    title: 'Consultoria Financeira',
-    description: 'Organize, entenda os números e crie processos confiáveis.',
+    title: 'Reestruturação Financeira',
+    description: 'Oferecemos Reestruturação Financeira completa, incluindo diagnóstico financeiro, análise de mercado, planejamento financeiro e estruturação de fluxos de trabalho. Nosso objetivo é impulsionar o seu negócio com resultados tangíveis.',
     icon: 'pi pi-arrow-right',
     to: 'consultoria-financeira'
   },
   {
     title: 'Treinamentos e Capacitação',
-    description: 'Capacite sua equipe para os desafios financeiros do mercado atual.',
+    description: 'Capacite sua equipe para enfrentar os desafios financeiros do mercado atual com nossos programas de treinamento e capacitação. Oferecemos cursos especializados para aprimorar as habilidades financeiras de sua equipe e prepará-la para o sucesso em um ambiente competitivo.',
     icon: 'pi pi-arrow-right',
     to: 'treinamentos-capacitacao'
   }
