@@ -13,7 +13,6 @@
 </template>
 
 <script setup>
-import PrimeButton from 'primevue/button'
 
 defineOptions({
   name: 'banner'
