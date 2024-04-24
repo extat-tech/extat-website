@@ -4,24 +4,35 @@
   >
     <div class="flex w-full max-w-screen-xl flex-wrap justify-between gap-20">
       <div class="flex flex-col gap-5 max-w-xl">
-        <h1 class="font-semibold text-4xl">Entregue mais valor com a Extat</h1>
-        <p class="font-medium text-xl text-gray-600">
+        <h3 class="text-brand-950 w-full md:text-4xl text-2xl font-semibold">
+          Entregue mais valor com a Extat
+        </h3>
+        <p class="w-full text-gray-950/70">
           Nossos serviços e metologia impactam centas de empresas dos mais
           variados tamanhos e segmentos
         </p>
-      </div>
-      <div class="flex flex-col w-full lg:flex-row lg:w-auto gap-3">
+        <div class="flex flex-col w-full md:flex-row lg:w-auto gap-6">
           <PrimeButton
             @click="redirectToHome"
-            class="w-full lg:w-auto"
+            class="w-full sm:w-fit"
             size="large"
             label="Nossos serviços"
             severity="secondary"
           />
-          <ScheduleCall />
+          <PrimeButton
+            @click="redirectToContact"
+            class="w-full sm:w-fit"
+            size="large"
+            label="Quero organizar meu financeiro"
+            icon="pi pi-arrow-right"
+            iconPos="right"
+          />
         </div>
+      </div>
     </div>
-    <div class="justify-center max-w-screen-xl grid grid-cols-1 xl:grid-cols-4 gap-16 w-full">
+    <div
+      class="justify-center max-w-screen-xl grid grid-cols-1 xl:grid-cols-4 gap-16 w-full"
+    >
       <div class="border-l-2 border-brand-700 pl-4 gap-3 grid min-w-[280px]">
         <h2 class="text-5xl font-light text-brand-700">400+</h2>
         <p class="font-medium text-xl text-gray-900">Projects completed</p>
@@ -43,13 +54,13 @@
 </template>
 
 <script setup>
-  import PrimeButton from 'primevue/button'
-  import ScheduleCall from '../components/ScheduleCall.vue'
-  import { useRouter } from 'vue-router'
+import PrimeButton from 'primevue/button'
+import ScheduleCall from '../components/ScheduleCall.vue'
+import { useRouter } from 'vue-router'
 
-  const router = useRouter()
+const router = useRouter()
 
-  const redirectToHome = () => {
+const redirectToHome = () => {
   router.push({ path: '/' }).then(() => {
     // Adicionando um pequeno atraso de 100ms antes de rolar para o topo
     setTimeout(() => {
@@ -64,5 +75,8 @@
       }, 300)
     }, 100)
   })
+}
+const redirectToContact = () => {
+  window.location.href = '/contato';
 }
 </script>

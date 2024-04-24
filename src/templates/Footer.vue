@@ -42,6 +42,7 @@
               >
               </PrimeButton>
             </li>
+            
           </ul>
         </span>
       </div>
@@ -61,13 +62,22 @@
         </span>
       </div>
       <span class="font-bold w-full text-xs text-brand-100/50"
-        >Contato
+        >Fale conosco
         <ul>
+          <li>
+              <PrimeButton
+                @click="redirectToContact"
+                class="!px-0 rounded-sm !py-0 text-gray-50"
+                link
+                label="Contato"
+              >
+              </PrimeButton>
+            </li>
           <li>
             <PrimeButton
               class="!px-0 rounded-sm !py-0 text-gray-50"
               link
-              label="+55 9 9999-9999"
+              label="+55 98 98176-7129"
             >
             </PrimeButton>
           </li>
@@ -134,6 +144,9 @@ defineOptions({
 
 const redirectHome = () => {
   window.location.href = '/'
+}
+const redirectToContact = () => {
+  window.location.href = '/contato'
 }
 
 const router = useRouter()

@@ -1,14 +1,14 @@
 <template>
   <section
-    class="px-6 pt-[152px] pb-24 xl:px-16 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900"
+    class="px-6 p-24 xl:px-16 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900"
   >
     <!-- Container -->
     <div
-      class="place-content-start gap-20 max-w-7xl w-full"
+      class="max-w-7xl w-full"
     >
       <!-- Texts -->
       <div
-        class="flex flex-col items-start w-full gap-20"
+        class="flex flex-col items-start w-full gap-10 md:gap-20"
       >
         <div class="flex flex-wrap gap-10 w-full justify-between md:flex-row items-center"> 
           <h2

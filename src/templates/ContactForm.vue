@@ -3,17 +3,26 @@
     class="grid grid-cols-1 lg:grid-cols-3 pb-24 px-6 w-full mx-auto max-w-screen-xl place-items-center items-start"
   >
     <!-- Aside -->
-    <div
+    <aside
       class="pt-24 bg-white w-full max-w-[360px] mr-auto flex flex-col gap-6 relative order-last lg:order-first lg:sticky top-0"
     >
-      <h1 class="font-bold">Contatos</h1>
+      <h2 class="font-bold">Contatos</h2>
       <div class="flex flex-col gap-1">
         <span class="block font-bold text-brand-950/40">E-mail</span>
-        <span class="block font-medium">contato@extat.com.br</span>
+        <PrimeButton
+          class="w-fit !p-0 h-8 !text-base text-brand-950"
+          label="contato@extat.com.br"
+          link
+        />
       </div>
       <div class="flex flex-col gap-1">
         <span class="block font-bold text-brand-950/40">Whatsapp</span>
-        <span class="block font-medium">+55 98 8176-7129</span>
+        <PrimeButton
+          class="w-fit !p-0 h-8 !text-base text-brand-950"
+          label="+55 98 98176-7129"
+          link
+        />
+        <span class="block font-medium"></span>
       </div>
       <div class="flex items-center gap-4">
         <img
@@ -26,12 +35,14 @@
           <span class="block font-bold text-brand-950/40"
             >Prefere uma chamada?</span
           >
-          <span class="block font-bold text-brand-700"
-            >Agende com o Jozerly</span
-          >
+          <PrimeButton
+          class="w-fit !p-0 h-8 !text-base"
+          label="Agende com o Jozerly"
+          link
+        />
         </div>
       </div>
-    </div>
+    </aside>
     <!-- Form Fields -->
     <form class="grid grid-cols-2 col-span-2 gap-8 pt-20 w-full">
       <fieldset class="flex flex-col col-span-3 gap-10">
@@ -129,7 +140,7 @@
           />
         </div>
         <PrimeButton
-          class="w-fit"
+          class="md:w-fit"
           icon="pi pi-arrow-right"
           iconPos="right"
           size="large"
@@ -144,6 +155,7 @@
 import InputText from 'primevue/inputtext'
 import SelectButton from 'primevue/selectbutton'
 import PrimeButton from 'primevue/button'
+
 import Textarea from 'primevue/textarea'
 
 import { ref } from 'vue'

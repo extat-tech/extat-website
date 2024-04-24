@@ -4,7 +4,7 @@
     title="Indicadores e Métricas Chave"
     subtitle="Com nossa expertise em indicadores e métricas chave, fornecemos relatórios financeiros personalizados sob demanda para o seu negócio. Mantenha-se informado e tome decisões estratégicas com base em dados precisos e relevantes."
   />
-  <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
+  <Logos title="Conheça as empresas que com a nossa ajuda, conseguem ter um resultado financeiro claro" />
   <CompanyFeatures
     title="Metodologia"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
@@ -25,7 +25,7 @@
 <script setup>
 import HeaderNavigation from '../../templates/HeaderNavigation.vue'
 import ServiceBanner from '../../templates/ServiceBanner.vue'
-import SocialProof from '../../templates/SocialProof.vue'
+import Logos from '../../templates/Logos.vue'
 import CompanyFeatures from '../../templates/CompanyFeatures.vue'
 import FeaturedServices from '../../templates/FeaturedServices.vue'
 import Metrics from '../../templates/Metrics.vue'

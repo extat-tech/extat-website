@@ -4,7 +4,7 @@
     title="Treinamentos e Capacitação"
     subtitle="Capacite sua equipe para enfrentar os desafios financeiros do mercado atual com nossos programas de treinamento e capacitação. Oferecemos cursos especializados para aprimorar as habilidades financeiras de sua equipe e prepará-la para o sucesso em um ambiente competitivo."
   />
-  <SocialProof title="Junte-se a mais de 100 empresas que já estão crescendo" />
+  <Logos title="Conheça as empresas que com a nossa ajuda, conseguem ter um resultado financeiro claro" />
   <CompanyFeatures
     title="Metodologia"
     description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio."
@@ -25,7 +25,7 @@
 <script setup>
 import HeaderNavigation from '../../templates/HeaderNavigation.vue'
 import ServiceBanner from '../../templates/ServiceBanner.vue'
-import SocialProof from '../../templates/SocialProof.vue'
+import Logos from '../../templates/Logos.vue'
 import CompanyFeatures from '../../templates/CompanyFeatures.vue'
 import FeaturedServices from '../../templates/FeaturedServices.vue'
 import Metrics from '../../templates/Metrics.vue'

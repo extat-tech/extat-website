@@ -15,7 +15,7 @@
   description="Se a resposta foi sim para algum destes problemas, então está na hora de organizar seu financeiro."
 />
 
-  <SocialProof
+  <Logos
     title="Conheça as empresas que com a nossa ajuda, conseguem ter um resultado financeiro claro"
   />
 
@@ -30,7 +30,7 @@
   description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio. "
   ></CompanyFeatures>
   <Testimonial
-    quote="A Extat foi fundamental para a saúde financeira do meu negócio."
+    quote="A Extat revolucionou a forma como gerencio as finanças da minha empresa."
     client="Jozerly Junior"
     role="Diretor Executivo, Bio Data Ltda."
   />
@@ -46,7 +46,7 @@ import { contentBanner } from '../../utils/language'
 import HeaderNavigation from '../../templates/HeaderNavigation.vue'
 import Banner from '../../templates/Banner.vue'
 import ProblemStatement from '../../templates/ProblemStatement.vue'
-import SocialProof from '../../templates/SocialProof.vue'
+import Logos from '../../templates/Logos.vue'
 import FeaturedServices from '../../templates/FeaturedServices.vue'
 import Testimonial from '../../templates/Testimonial.vue'
 import CompanyFeatures from '../../templates/CompanyFeatures.vue'
@@ -56,11 +56,6 @@ import Footer from '../../templates/Footer.vue'
 defineOptions({
   name: 'home-view'
 })
-
-
-const redirectToContact = () => {
-  window.location.href = '/contato';
-}
 
 const featuredServices = [
   {
