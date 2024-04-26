@@ -1,0 +1,58 @@
+{
+  "name": "extat-website-20240426160142",
+  "bucket": "extat-website-20240426160142",
+  "preset": "vue",
+  "mode": "deliver",
+  "env": "production",
+  "prefix": "20240426190307",
+  "not-first-run": true,
+  "function": {
+    "id": 21366,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "./azion/args.json",
+    "instance-id": 21000,
+    "instance-name": "__DEFAULT__"
+  },
+  "application": {
+    "id": 1714150381,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1714158959,
+    "name": "__DEFAULT__"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 128524,
+      "origin-key": "8f992268-bcbe-4cf3-9669-06c50dcfa56b",
+      "name": "extat-website-20240426160142_single"
+    },
+    {
+      "origin-id": 128525,
+      "origin-key": "28b25261-1acd-4ff9-bc2d-efccd129ee76",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 241621,
+        "name": "Main_Rule"
+      },
+      {
+        "id": 241622,
+        "name": "Index_Rewrite_1"
+      },
+      {
+        "id": 241623,
+        "name": "Index_Rewrite_2"
+      }
+    ]
+  },
+  "cache-settings": null
+}
