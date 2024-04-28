@@ -139,12 +139,27 @@
             v-model="project"
           />
         </div>
+        <Toast position="top-right" @close="onClose">
+          <template #message>
+            <div class="flex gap-2 flex-col md:flex-row md:items-center w-full">
+              <div class="bg-green-200 h-8 w-8 md:min-h-14 md:min-w-14 flex items-center justify-center">
+                <i class="pi pi-check text-green-700"></i>
+              </div>
+              <div class="flex gap-2 flex-col items-center h-full w-full px-8 md:pb-0 pb-4 md:px-6">
+                <span class="truncated w-full text-sm font-bold">Informações enviadas</span>
+                <span class="truncated w-full text-sm font-medium text-brand-950/70">Consulte seu e-mail para mais informações</span>
+              </div>
+           </div>
+          </template>
+        </Toast> 
         <PrimeButton
+          @click="show()"
           class="md:w-fit"
           icon="pi pi-arrow-right"
           iconPos="right"
           size="large"
           label="Enviar informações"
+          loading
         />
       </fieldset>
     </form>
@@ -155,10 +170,21 @@
 import InputText from 'primevue/inputtext'
 import SelectButton from 'primevue/selectbutton'
 import PrimeButton from 'primevue/button'
-
+import Toast from 'primevue/toast';
 import Textarea from 'primevue/textarea'
+import { ref } from 'vue';
+import { useToast } from 'primevue/usetoast';
 
-import { ref } from 'vue'
+const toast = useToast();
+
+const show = () => {
+    toast.add({ severity: 'success', summary: 'Informações enviadas', detail: 'Consulte seu e-mail para mais detalhes' });
+};
+
+
+const onClose = () => {
+  value.visible = "false"
+}
 
 const name = ref('')
 const email = ref('')
@@ -181,4 +207,5 @@ const serviceOptions = ref([
 defineOptions({
   name: 'contact-form'
 })
+
 </script>

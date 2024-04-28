@@ -1,23 +1,28 @@
 <template>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-screen-lg">
-    <div
-      v-for="(card, index) in cardList"
-      :key="(card, index)"
-      class="relative bg-brand-50 w-full md:h-[268px]"
-    >
-      <div class="flex gap-4 p-10 md:p-10 flex-col h-full justify-end">
-        <h3 class="mt-7 text-brand-900 group-hover:text-white md:text-xl font-bold">{{ card.title }}</h3>
-        <p class=" h-16 text-gray-950/70 group-hover:text-white text-sm md:text-base">
-          {{ card.description }}
-        </p>
-      </div>
-      <div
-        class="absolute bg-brand-200 w-10 h-10 top-0 flex justify-center items-center"
-      >
-        <i class="text-2xl text-brand-700" :class="card.icon"></i>
-      </div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 w-full max-w-screen-lg">
+  <div
+    v-for="(card, index) in cardList"
+    :key="(card, index)"
+    class="w-full"
+  >
+  <!-- Content -->
+    <div class="flex flex-col gap-10 mb-14 justify-end">
+      <!-- Asset -->
+      <div class="relative flex">
+        <div class="bg-white/60 border-brand-200 border backdrop-blur-sm w-12 h-12 z-20 flex justify-center items-center">
+          <i class="text-2xl text-brand-700" :class="card.icon"></i>
+        </div>
+        <span class="absolute order-1 -top-4 start-4 z-10 min-w-12 min-h-12 bg-brand-700"></span>
+        </div>
+      <!-- Texts -->
+        <div class="flex flex-col gap-2">
+          <h3 class="text-brand-900 text-xl md:text-2xl font-medium">{{ card.title }}</h3>
+          <p class="h-16  text-lg text-gray-950/70">{{ card.description }}</p>
+        </div>
     </div>
   </div>
+</div>
+
 </template>
 
 <script setup>

@@ -33,7 +33,7 @@
           >
             <div class="space-y-4 w-full">
               <h3
-                class="text-brand-900 group-hover:text-white md:text-xl font-bold"
+                class="text-brand-900 group-hover:text-white text-xl md:text-2xl font-medium"
               >
                 {{ service.title }}
               </h3>

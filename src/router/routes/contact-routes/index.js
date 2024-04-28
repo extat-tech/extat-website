@@ -3,4 +3,4 @@ export const contactRoutes = {
   path: '/contato',
   name: 'contato',
   component: () => import('../../../views/Contact/index.vue')
-}
+};

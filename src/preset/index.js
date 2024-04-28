@@ -5,6 +5,7 @@ import menu from './menu';
 import inputtext from './inputtext';
 import selectbutton from './selectbutton';
 import textarea from './textarea';
+import toast from './toast';
 
 export default {
     global,
@@ -14,4 +15,5 @@ export default {
     inputtext,
     selectbutton,
     textarea,
+    toast
 }

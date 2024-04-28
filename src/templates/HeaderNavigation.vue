@@ -1,6 +1,6 @@
 <template>
   <header
-    class="transition-all z-10 fixed flex w-full items-center justify-center bg-white pl-6 h-14 shadow-sm border-brand-200"
+    class="transition-all z-30 fixed flex w-full items-center justify-center bg-white pl-6 h-14 shadow-sm border-brand-200"
   >
     <div class="flex justify-between items-center w-full">
       <!-- Back to Home -->

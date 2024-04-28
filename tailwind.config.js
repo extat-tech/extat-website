@@ -18,6 +18,7 @@ export default {
       transparent: colors.transparent,
       gray: colors.slate,
       white: colors.white,
+      green: colors.green,
       brand: {
         50: "#E8F7FF",
         100: "#D5EFFF",

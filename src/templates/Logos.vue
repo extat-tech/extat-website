@@ -7,7 +7,7 @@
         <!-- Title and X -->
         <div class="flex gap-4">
           <span
-            class="text-brand-950/80 tracking-widest text-center w-full text-sm font-regular"
+            class="text-brand-950/80  w-full text-sm font-regular"
             >{{ title }}</span
           >
         </div>
