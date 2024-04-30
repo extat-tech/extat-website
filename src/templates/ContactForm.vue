@@ -153,13 +153,13 @@
           </template>
         </Toast> 
         <PrimeButton
-          @click="show()"
+          :loading="isLoading"
+          @click="submitForm"
           class="md:w-fit"
           icon="pi pi-arrow-right"
           iconPos="right"
           size="large"
           label="Enviar informações"
-          loading
         />
       </fieldset>
     </form>
@@ -175,17 +175,11 @@ import Textarea from 'primevue/textarea'
 import { ref } from 'vue';
 import { useToast } from 'primevue/usetoast';
 
-const toast = useToast();
+defineOptions({
+  name: 'contact-form'
+})
 
-const show = () => {
-    toast.add({ severity: 'success', summary: 'Informações enviadas', detail: 'Consulte seu e-mail para mais detalhes' });
-};
-
-
-const onClose = () => {
-  value.visible = "false"
-}
-
+const isLoading = ref (false)
 const name = ref('')
 const email = ref('')
 const company = ref('')
@@ -203,9 +197,17 @@ const serviceOptions = ref([
   'Indicadores e Métricas',
   'Treinamento e Capacitação'
 ])
+const toast = useToast();
+const onClose = () => {
+  value.visible = "false"
+}
 
-defineOptions({
-  name: 'contact-form'
-})
+const submitForm = () => {
+  isLoading.value = true;
+  setTimeout(() => {
+    isLoading.value = false;
+    toast.add({ severity: 'success', summary: 'Informações enviadas', detail: 'Consulte seu e-mail para mais detalhes' });
+  }, 2200) 
+}
 
 </script>
