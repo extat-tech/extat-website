@@ -129,7 +129,7 @@
         </div>
         <div class="flex flex-col gap-2 col-span-2">
           <label class="font-bold text-sm text-brand-950" for="project"
-            >Conte um pouco mais sobre o seu projeto</label
+            >Conta pra gente, como poderíamos lhe ajudar?</label
           >
           <Textarea
             placeholder="Descreva seu projeto aqui"
@@ -148,7 +148,7 @@
                 <i class="pi pi-check text-green-700"></i>
               </div>
               <div
-                class="flex gap-2 flex-col items-center h-full w-full px-8 md:pb-0 pb-4 md:px-6"
+                class="flex flex-col items-center h-full w-full px-8 md:pb-0 pb-4 md:px-6"
               >
                 <span class="truncated w-full text-sm font-bold"
                   >Informações enviadas</span
