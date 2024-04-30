@@ -36,10 +36,10 @@
             >Prefere uma chamada?</span
           >
           <PrimeButton
-          class="w-fit !p-0 h-8 !text-base"
-          label="Agende com o Jozerly"
-          link
-        />
+            class="w-fit !p-0 h-8 !text-base"
+            label="Agende com o Jozerly"
+            link
+          />
         </div>
       </div>
     </aside>
@@ -139,27 +139,36 @@
             v-model="project"
           />
         </div>
-        <Toast position="top-right" @close="onClose">
+        <Toast position="top-right">
           <template #message>
             <div class="flex gap-2 flex-col md:flex-row md:items-center w-full">
-              <div class="bg-green-200 h-8 w-8 md:min-h-14 md:min-w-14 flex items-center justify-center">
+              <div
+                class="bg-green-200 h-8 w-8 md:min-h-14 md:min-w-14 flex items-center justify-center"
+              >
                 <i class="pi pi-check text-green-700"></i>
               </div>
-              <div class="flex gap-2 flex-col items-center h-full w-full px-8 md:pb-0 pb-4 md:px-6">
-                <span class="truncated w-full text-sm font-bold">Informações enviadas</span>
-                <span class="truncated w-full text-sm font-medium text-brand-950/70">Consulte seu e-mail para mais informações</span>
+              <div
+                class="flex gap-2 flex-col items-center h-full w-full px-8 md:pb-0 pb-4 md:px-6"
+              >
+                <span class="truncated w-full text-sm font-bold"
+                  >Informações enviadas</span
+                >
+                <span
+                  class="truncated w-full text-sm font-medium text-brand-950/70"
+                  >Consulte seu e-mail para mais informações</span
+                >
               </div>
-           </div>
+            </div>
           </template>
-        </Toast> 
+        </Toast>
         <PrimeButton
           :loading="isLoading"
-          @click="submitForm"
           class="md:w-fit"
           icon="pi pi-arrow-right"
           iconPos="right"
           size="large"
           label="Enviar informações"
+          @click="sendEmail"
         />
       </fieldset>
     </form>
@@ -170,16 +179,19 @@
 import InputText from 'primevue/inputtext'
 import SelectButton from 'primevue/selectbutton'
 import PrimeButton from 'primevue/button'
-import Toast from 'primevue/toast';
+import Toast from 'primevue/toast'
 import Textarea from 'primevue/textarea'
-import { ref } from 'vue';
-import { useToast } from 'primevue/usetoast';
+import { ref } from 'vue'
+import { useToast } from 'primevue/usetoast'
+import axios from 'axios'
 
 defineOptions({
   name: 'contact-form'
 })
 
-const isLoading = ref (false)
+const toast = useToast()
+
+const isLoading = ref(false)
 const name = ref('')
 const email = ref('')
 const company = ref('')
@@ -197,17 +209,41 @@ const serviceOptions = ref([
   'Indicadores e Métricas',
   'Treinamento e Capacitação'
 ])
-const toast = useToast();
-const onClose = () => {
-  value.visible = "false"
-}
+const competitors = ref('')
+const project = ref('')
 
-const submitForm = () => {
-  isLoading.value = true;
-  setTimeout(() => {
-    isLoading.value = false;
-    toast.add({ severity: 'success', summary: 'Informações enviadas', detail: 'Consulte seu e-mail para mais detalhes' });
-  }, 2200) 
+const sendEmail = async () => {
+  try {
+    isLoading.value = true
+    await axios({
+      method: 'post',
+      url: 'https://extat-api.onrender.com/sendEmail',
+      data: {
+        params: {
+          name: name.value,
+          email: email.value,
+          company: company.value,
+          whatsapp: whatsapp.value,
+          employees: employees.value,
+          service: service.value,
+          competitors: competitors.value,
+          project: project.value
+        }
+      }
+    })
+    toast.add({
+      severity: 'success',
+      summary: 'Informações enviadas',
+      detail: 'Consulte seu e-mail para mais detalhes'
+    })
+  } catch (error) {
+    toast.add({
+      severity: 'error',
+      summary: 'Error ao enviar e-mail. :/',
+      detail: 'error'
+    })
+  } finally {
+    isLoading.value = false
+  }
 }
-
 </script>
