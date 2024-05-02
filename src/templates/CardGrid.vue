@@ -6,7 +6,7 @@
     class="w-full"
   >
   <!-- Content -->
-    <div class="flex flex-col gap-10 mb-14 justify-end">
+    <div class="flex flex-col gap-10 mt-10 justify-end">
       <!-- Asset -->
       <div class="relative flex">
         <div class="bg-white/60 border-brand-200 border backdrop-blur-sm w-12 h-12 z-20 flex justify-center items-center">

@@ -36,10 +36,12 @@
             >Prefere uma chamada?</span
           >
           <PrimeButton
-            class="w-fit !p-0 h-8 !text-base"
-            label="Agende com o Jozerly"
-            link
-          />
+              @click="redirectCall"
+              class="!px-0 rounded-none w-fit h-fit my-1 !text-base !py-0 text-brand-700"
+              link
+              label="Agende com o Jozerly"
+            >
+            </PrimeButton>
         </div>
       </div>
     </aside>
@@ -246,4 +248,9 @@ const sendEmail = async () => {
     isLoading.value = false
   }
 }
+
+const redirectCall = () => {
+  window.open('https://calendly.com/extat/conversa-para-falar-da-sua-empresa', '_blank');
+};
+
 </script>

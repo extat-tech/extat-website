@@ -451,7 +451,7 @@ export default {
   }),
   loadingicon: ({ props }) => ({
     class: [
-      'h-3 w-3',
+      'h-6 w-6',
       'mx-0',
       {
         'mr-2': props.iconPos == 'left' && props.label != null,
