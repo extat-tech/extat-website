@@ -30,6 +30,7 @@
         </div>
       </div>
     </div>
+    <!-- To do: bind propertys -->
     <div
       class="justify-center max-w-screen-xl grid grid-cols-1 xl:grid-cols-4 gap-16 w-full"
     >

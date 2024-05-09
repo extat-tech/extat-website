@@ -5,12 +5,12 @@
     <div class="max-w-7xl w-full">
       <div class="flex flex-col gap-6 mb-12">
         <h1
-          class="w-full lg:max-w-3xl text-4xl lg:text-6xl font-medium text-white"
+          class="w-full lg:max-w-3xl text-4xl font-medium text-white"
         >
           {{ title }}
         </h1>
-        <p class="md:text-xl w-full md:max-w-2xl text-gray-50/70">
-          {{ subtitle }}
+        <p class="w-full md:max-w-2xl text-gray-50/70">
+          {{ description }}
         </p>
       </div>
       <PrimeButton
@@ -37,7 +37,7 @@ defineProps({
     required: true,
     type: String
   },
-  subtitle: {
+  description: {
     required: true,
     type: String
   }

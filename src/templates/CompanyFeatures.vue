@@ -17,7 +17,7 @@
             iconPos="right"
           />
       </div>
-      <CardGrid :cardList="pilars"></CardGrid>
+      <CardGrid :cardList="items"></CardGrid>
     </div>
   </section>
 </template>
@@ -42,35 +42,12 @@ const props = defineProps({
   description: {
     type: String,
     required: true
+  },
+  items: {
+    type: Array,
+    required: true
   }
 })
 
-const pilars = [
-  {
-    title: 'Clareza',
-    description: 'Organizar, entender os números e criar processos confiáveis.',
-    icon: 'pi pi-eye'
-  },
-  {
-    title: 'Rentabilidade',
-    description:
-      'Reduzir despesas, interpretar custos e definir preços corretamente.',
-    icon: 'pi pi-wallet'
-  },
-  {
-    title: 'Expansão',
-    description: 'Gerenciar endividamentos ou captar recursos para crescer',
-    icon: 'pi pi-arrow-up-right-and-arrow-down-left-from-center'
-  },
-  {
-    title: 'Direcionamento',
-    description: 'Definir a melhor rota com um planejamento estratégico.',
-    icon: 'pi pi-arrows-alt'
-  },
-  {
-    title: 'Estabilidade',
-    description: 'Fortalecer o caixa e a solidez da sua empresa.',
-    icon: 'pi pi-chart-bar'
-  }
-]
+
 </script>

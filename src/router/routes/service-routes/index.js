@@ -5,17 +5,17 @@ export const ServiceRoutes = {
     {
       path: 'consultoria-financeira',
       name: 'consultoriaFinanceira',
-      component: () => import('../../../views/Service01/index.vue')
+      component: () => import('../../../views/RestruturaçãoFinanceira/index.vue')
     },
     {
       path: 'indicadores-metricas',
       name: 'indicadoresMetricas',
-      component: () => import('../../../views/Service02/index.vue')
+      component: () => import('../../../views/IndicadoresChave/index.vue')
     },
     {
       path: 'treinamentos-capacitacao',
       name: 'treinamentosCapacitacao',
-      component: () => import('../../../views/Service03/index.vue')
+      component: () => import('../../../views/TreinamentosCapacitacão/index.vue')
     }
   ]
 }

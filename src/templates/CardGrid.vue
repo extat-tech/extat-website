@@ -1,5 +1,5 @@
 <template>
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 w-full max-w-screen-lg">
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-10 w-full max-w-screen-lg">
   <div
     v-for="(card, index) in cardList"
     :key="(card, index)"
@@ -16,8 +16,8 @@
         </div>
       <!-- Texts -->
         <div class="flex flex-col gap-2">
-          <h3 class="text-brand-900 text-xl md:text-2xl font-medium">{{ card.title }}</h3>
-          <p class="h-16  text-lg text-gray-950/70">{{ card.description }}</p>
+          <h3 class="text-brand-900 text-xl font-medium">{{ card.title }}</h3>
+          <p class="h-fit text-balance leading-relaxed text-gray-950/70">{{ card.description }}</p>
         </div>
     </div>
   </div>

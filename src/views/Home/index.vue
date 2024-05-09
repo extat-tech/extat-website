@@ -6,12 +6,7 @@
   />
   <ProblemStatement
   title="Identificou algum destes problemas no setor financeiro da sua empresa?"
-  :problemList="[
-    { title: 'Desorganização financeira', icon: 'pi pi-times' },
-    { title: 'Atrasos nos pagamentos', icon: 'pi pi-times' },
-    { title: 'Falhas na gestão de recebíveis', icon: 'pi pi-times' },
-    { title: 'Dificuldade em interpretar resultados mensais', icon: 'pi pi-times' }
-  ]"
+  :problemList="problems"
   description="Se a resposta foi sim para algum destes problemas, então está na hora de organizar seu financeiro."
 />
 
@@ -28,6 +23,7 @@
   <CompanyFeatures
   title="Nossos pilares para o sucesso estratégico"
   description="Na nossa jornada em direção ao sucesso empresarial, reconhecemos que alguns pilares são fundamentais para sustentar o crescimento, a estabilidade e a rentabilidade de qualquer negócio. "
+  :items="pilars"
   ></CompanyFeatures>
   <Testimonial
     quote="A Extat revolucionou a forma como gerencio as finanças da minha empresa."
@@ -78,6 +74,42 @@ const featuredServices = [
       'Capacite sua equipe para enfrentar os desafios financeiros do mercado atual com nossos programas de treinamento e capacitação. Oferecemos cursos especializados para aprimorar as habilidades financeiras de sua equipe e prepará-la para o sucesso em um ambiente competitivo.',
     icon: 'pi pi-arrow-right',
     to: 'service/treinamentos-capacitacao'
+  }
+]
+
+const problems = [
+    { title: 'Desorganização financeira', icon: 'pi pi-times' },
+    { title: 'Atrasos nos pagamentos', icon: 'pi pi-times' },
+    { title: 'Falhas na gestão de recebíveis', icon: 'pi pi-times' },
+    { title: 'Dificuldade em interpretar resultados mensais', icon: 'pi pi-times' }
+  ]
+
+const pilars = [
+  {
+    title: 'Clareza',
+    description: 'Organizar, entender os números e criar processos confiáveis.',
+    icon: 'pi pi-eye'
+  },
+  {
+    title: 'Rentabilidade',
+    description:
+      'Reduzir despesas, interpretar custos e definir preços corretamente.',
+    icon: 'pi pi-wallet'
+  },
+  {
+    title: 'Expansão',
+    description: 'Gerenciar endividamentos ou captar recursos para crescer',
+    icon: 'pi pi-arrow-up-right-and-arrow-down-left-from-center'
+  },
+  {
+    title: 'Direcionamento',
+    description: 'Definir a melhor rota com um planejamento estratégico.',
+    icon: 'pi pi-arrows-alt'
+  },
+  {
+    title: 'Estabilidade',
+    description: 'Fortalecer o caixa e a solidez da sua empresa.',
+    icon: 'pi pi-chart-bar'
   }
 ]
 </script>
