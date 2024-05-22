@@ -1,7 +1,8 @@
 <template>
-  <Metrics />
+  <ClientsCarousel></ClientsCarousel>
 </template>
 
 <script setup>
-import Metrics from '../../templates/Metrics.vue'
+
+import ClientsCarousel from '../../templates/ClientsCarousel.vue';
 </script>

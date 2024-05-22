@@ -1,5 +1,5 @@
 <template>
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-10 w-full max-w-screen-lg">
+<div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-20 mt-10">
   <div
     v-for="(card, index) in cardList"
     :key="(card, index)"

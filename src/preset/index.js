@@ -6,6 +6,7 @@ import inputtext from './inputtext';
 import selectbutton from './selectbutton';
 import textarea from './textarea';
 import toast from './toast';
+import carousel from './carousel';
 
 export default {
     global,
@@ -15,5 +16,6 @@ export default {
     inputtext,
     selectbutton,
     textarea,
-    toast
+    toast,
+    carousel
 }

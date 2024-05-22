@@ -30,25 +30,13 @@
         </div>
       </div>
     </div>
-    <!-- To do: bind propertys -->
+
     <div
-      class="justify-center max-w-screen-xl grid grid-cols-1 xl:grid-cols-4 gap-16 w-full"
+      class="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-16 w-full"
     >
-      <div class="border-l-2 border-brand-700 pl-4 gap-3 grid min-w-[280px]">
-        <h2 class="text-5xl font-light text-brand-700">400+</h2>
-        <p class="font-medium text-xl text-gray-900">Projects completed</p>
-      </div>
-      <div class="border-l-2 border-brand-700 pl-4 gap-3 grid min-w-[280px]">
-        <h2 class="text-5xl font-light text-brand-700">600%</h2>
-        <p class="font-medium text-xl text-gray-900">Return on investment</p>
-      </div>
-      <div class="border-l-2 border-brand-700 pl-4 gap-3 grid min-w-[280px]">
-        <h2 class="text-5xl font-light text-brand-700">10k</h2>
-        <p class="font-medium text-xl text-gray-900">Global downloads</p>
-      </div>
-      <div class="border-l-2 border-brand-700 pl-4 gap-3 grid min-w-[280px]">
-        <h2 class="text-5xl font-light text-brand-700">200+</h2>
-        <p class="font-medium text-xl text-gray-900">5-star reviews</p>
+      <div v-for="(metric, index) in metrics" :key="index" class="border-l-2  border-brand-700 pl-4 gap-3 grid min-w-[280px]">
+        <h2 class="text-3xl font-medium text-brand-700">{{ metric.metric }}</h2>
+        <p class="font-medium  text-base text-gray-900/60">{{ metric.caption }}</p>
       </div>
     </div>
   </div>
@@ -80,4 +68,13 @@ const redirectToHome = () => {
 const redirectToContact = () => {
   window.location.href = '/contato';
 }
+
+const metrics = [
+  { metric: '+10', caption: 'anos no mercado' },
+  { metric: '+70', caption: 'de 70 projetos atendidos' },
+  { metric: 'R$ 1.408.104.583', caption: 'faturamento dos clientes somados' },
+  { metric: 'R$ 260.689.066', caption: 'econômia gerada nos clientes' },
+  { metric: '10 A 20% A.A.', caption: 'crescimento médio dos clientes' }
+];
+
 </script>

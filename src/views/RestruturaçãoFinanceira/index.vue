@@ -51,25 +51,29 @@ const otherServices = [
 const methodology = [
   {
     title: 'Diagnóstico Financeiro',
-    description: 'Análise detalhada das finanças atuais da empresa, incluindo balanços, demonstrações de resultados e fluxo de caixa. Identificação de áreas de oportunidade e pontos fracos na estrutura financeira.',
+    description: 'Avaliação detalhada das finanças da empresa para identificar pontos fortes, fraquezas, oportunidades e ameaças, oferecendo uma visão clara da situação financeira atual.',
     icon: 'pi pi-eye'
   },
   {
-    title: 'Análise de Mercado',
-    description: 'Avaliação do cenário econômico e competitivo no qual a empresa está inserida. Identificação de tendências de mercado e potenciais ameaças e oportunidades.',
+    title: 'Diagnóstico da Gestão',
+    description: 'Análise dos processos e práticas de gestão da empresa para identificar ineficiências e áreas de melhoria, garantindo uma base sólida para a reestruturação.',
     icon: 'pi pi-wallet'
   },
   {
-    title: 'Planejamento Financeiro',
-    description: 'Desenvolvimento de um plano estratégico para alcançar os objetivos financeiros da empresa. Definição de metas claras e mensuráveis, juntamente com a identificação de recursos necessários para alcançá-las.',
+    title: 'Elaboração do Plano Financeiro',
+    description: 'Desenvolvimento de um plano estratégico que inclui metas financeiras, orçamentos e ações específicas para melhorar a saúde financeira da empresa.',
     icon: 'pi pi-arrow-up-right-and-arrow-down-left-from-center'
   },
   {
-    title: 'Estruturação de Fluxos de Trabalho',
-    description: 'Revisão e otimização dos processos financeiros existentes para garantir eficiência e eficácia. Implementação de sistemas e ferramentas para melhorar a gestão financeira da empresa.',
+    title: 'Nova Visão da Empresa a partir dos Resultados',
+    description: 'Redefinição dos objetivos e estratégias da empresa com base nos resultados do diagnóstico, criando uma visão renovada e alinhada às novas metas financeiras.',
+    icon: 'pi pi-arrows-alt'
+  },
+  {
+    title: 'Elaboração dos Fluxos de Trabalho',
+    description: 'Desenho e implementação de fluxos de trabalho otimizados para garantir eficiência operacional e melhor controle financeiro, alinhados às metas estabelecidas.',
     icon: 'pi pi-arrows-alt'
   }
 ];
-
 
 </script>

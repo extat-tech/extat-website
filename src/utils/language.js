@@ -1,6 +1,6 @@
 const contentBanner = {
   title: {
-    inicioTitulo: 'Tenha clareza no seu financeiro, torne sua empresa mais',
+    inicioTitulo: 'Organize o seu financeiro, torne sua empresa mais',
     mensagemMarcada: ' lucrativa ',
     finalTitulo: 'e cresça exponencialmente'
     },

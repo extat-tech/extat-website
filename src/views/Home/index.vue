@@ -9,15 +9,15 @@
   :problemList="problems"
   description="Se a resposta foi sim para algum destes problemas, então está na hora de organizar seu financeiro."
 />
-
-  <Logos
-    title="Conheça as empresas que com a nossa ajuda, conseguem ter um resultado financeiro claro"
-  />
+  <ClientsCarousel title="Conheça as empresas que com a nossa ajuda, já tem um resultado financeiro claro"></ClientsCarousel>
+  <!-- <Logos
+    title="Conheça as empresas que com a nossa ajuda, já tem um resultado financeiro claro"
+  /> -->
 
   <FeaturedServices
     id="anchorScroll"
     title="Como podemos te ajudar?"
-    description="Explore como nossos serviços especializados podem ser uma vantagem estratégica para alcançar seus objetivos financeiros. Nossa equipe está pronta para colaborar com você para impulsionar o sucesso de sua empresa."
+    description="Nós te entendemos, por isso temos serviços especializados que serão uma vantagem estratégica pra te ajudar a alcançar melhores resultados financeiros, nossa equipe está pronta pra impulsionar o sucesso da sua empresa."
     :serviceList="featuredServices"
   />
   <CompanyFeatures
@@ -39,6 +39,7 @@
 
 <script setup>
 import { contentBanner } from '../../utils/language'
+import ClientsCarousel from '../../templates/ClientsCarousel.vue';
 import HeaderNavigation from '../../templates/HeaderNavigation.vue'
 import Banner from '../../templates/Banner.vue'
 import ProblemStatement from '../../templates/ProblemStatement.vue'
@@ -84,32 +85,42 @@ const problems = [
     { title: 'Dificuldade em interpretar resultados mensais', icon: 'pi pi-times' }
   ]
 
-const pilars = [
+  const pilars = [
   {
-    title: 'Clareza',
-    description: 'Organizar, entender os números e criar processos confiáveis.',
-    icon: 'pi pi-eye'
+    title: 'Transparência e Clareza',
+    description: 'Fornecer informações financeiras claras para decisões informadas, garantindo transparência em todos os dados.',
+    icon: 'pi pi-eye' 
   },
   {
-    title: 'Rentabilidade',
-    description:
-      'Reduzir despesas, interpretar custos e definir preços corretamente.',
-    icon: 'pi pi-wallet'
+    title: 'Expertise Financeira',
+    description: 'Contar com consultores experientes para oferecer soluções precisas e baseadas em profundo conhecimento.',
+    icon: 'pi pi-wallet' 
   },
   {
-    title: 'Expansão',
-    description: 'Gerenciar endividamentos ou captar recursos para crescer',
-    icon: 'pi pi-arrow-up-right-and-arrow-down-left-from-center'
+    title: 'Inovação e Tecnologia',
+    description: 'Utilizar ferramentas e tecnologias avançadas para aumentar a eficiência e fornecer soluções modernas.',
+    icon: 'pi pi-cog' 
   },
   {
-    title: 'Direcionamento',
+    title: 'Personalização do Serviço',
     description: 'Definir a melhor rota com um planejamento estratégico.',
-    icon: 'pi pi-arrows-alt'
+    icon: 'pi pi-user-edit' 
   },
   {
-    title: 'Estabilidade',
-    description: 'Fortalecer o caixa e a solidez da sua empresa.',
-    icon: 'pi pi-chart-bar'
+    title: 'Educação e Capacitação',
+    description: 'Capacitar clientes continuamente, empoderando-os para manter a saúde financeira a longo prazo.',
+    icon: 'pi pi-book' 
+  },
+  {
+    title: 'Parceria e Colaboração',
+    description: 'Trabalhar junto aos clientes para implementar soluções, construindo relacionamentos de confiança e parceria.',
+    icon: 'pi pi-users' 
+  },
+  {
+    title: 'Resultados Mensuráveis',
+    description: 'Focar em resultados tangíveis e mensuráveis, demonstrando impacto claro e melhoria no desempenho financeiro.',
+    icon: 'pi pi-chart-line'
   }
-]
+];
+
 </script>
