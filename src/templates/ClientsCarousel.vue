@@ -31,13 +31,12 @@ import { ref } from 'vue';
 import Carousel from 'primevue/carousel'
 
 const brands = ref([
-  { img: 'src/assets/img/dl-logistica.svg' },
-  { img: 'src/assets/img/cachos-de-diva.svg' },
-  { img: 'src/assets/img/fonomulti.svg' },
-  { img: 'src/assets/img/dl-logistica.svg' },
-  { img: 'src/assets/img/cachos-de-diva.svg' },
-  { img: 'src/assets/img/fonomulti.svg' },
-
+  { img: '/assets/img/dl-logistica.svg' },
+  { img: '/assets/img/cachos-de-diva.svg' },
+  { img: '/assets/img/fonomulti.svg' },
+  { img: '/assets/img/dl-logistica.svg' },
+  { img: '/assets/img/cachos-de-diva.svg' },
+  { img: '/assets/img/fonomulti.svg' },
 ]);
 
 const responsiveOptions = [
