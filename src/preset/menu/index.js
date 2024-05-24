@@ -53,7 +53,7 @@ export default {
             'relative',
 
             // Font
-            'font-semibold',
+            'font-medium',
 
             // Flexbox
             'flex',
@@ -84,7 +84,7 @@ export default {
     submenuheader: {
         class: [
             // Font
-            'font-bold',
+            'font-medium',
             'text-xs leading-6',
 
             // Spacing

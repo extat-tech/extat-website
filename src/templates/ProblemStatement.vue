@@ -12,7 +12,7 @@
       >
         <div class="flex flex-wrap gap-10 w-full justify-between md:flex-row items-center"> 
           <h2
-          class="order-2 lg:-order-1 w-full lg:max-w-xl text-2xl md:text-4xl text-white font-semibold"
+          class="order-2 lg:-order-1 w-full lg:max-w-xl text-2xl md:text-4xl text-white font-medium"
           >
           {{ title }}
         </h2>
@@ -58,8 +58,8 @@
             class="w-full"
             size="large"
             label="Quero organizar meu financeiro"
-            icon="pi pi-arrow-right"
-            iconPos="right"
+             
+             
           />
         </div>
       </div>

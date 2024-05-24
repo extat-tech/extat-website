@@ -29,7 +29,7 @@
       <Menu :model="items">
         <template #item ="{item}">
           <router-link :to="item.route">
-            <span class="flex items-center py-3 px-3 font-semibold">{{ item.label }}</span>
+            <span class="flex items-center py-3 px-3 font-medium">{{ item.label }}</span>
           </router-link>
         </template>
       </Menu>

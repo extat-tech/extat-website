@@ -4,7 +4,7 @@
     <div class="max-w-screen-xl px-6 w-full">
       <!-- Texts -->
       <div class="flex flex-col w-full text-center gap-6 lg:gap-10">
-        <h1 class="sm:text-5xl text-2xl text-white font-semibold">
+        <h1 class="sm:text-5xl text-2xl text-white font-medium">
           {{ title }}
         </h1>
       </div>

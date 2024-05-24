@@ -6,9 +6,9 @@
     <aside
       class="pt-24 bg-white w-full max-w-[360px] mr-auto flex flex-col gap-6 relative order-last lg:order-first lg:sticky top-0"
     >
-      <h2 class="font-bold">Contatos</h2>
+      <h2 class="font-medium">Contatos</h2>
       <div class="flex flex-col gap-1">
-        <span class="block font-bold text-brand-950/40">E-mail</span>
+        <span class="block font-medium text-brand-950/40">E-mail</span>
         <PrimeButton
           class="w-fit !p-0 h-8 !text-base text-brand-950"
           label="contato@extat.com.br"
@@ -16,7 +16,7 @@
         />
       </div>
       <div class="flex flex-col gap-1">
-        <span class="block font-bold text-brand-950/40">Whatsapp</span>
+        <span class="block font-medium text-brand-950/40">Whatsapp</span>
         <PrimeButton
           class="w-fit !p-0 h-8 !text-base text-brand-950"
           label="+55 98 98176-7129"
@@ -32,7 +32,7 @@
           srcset=""
         />
         <div class="flex flex-col">
-          <span class="block font-bold text-brand-950/40"
+          <span class="block font-medium text-brand-950/40"
             >Prefere uma chamada?</span
           >
           <PrimeButton
@@ -49,7 +49,7 @@
     <form class="grid grid-cols-2 col-span-2 gap-8 pt-20 w-full">
       <fieldset class="flex flex-col col-span-3 gap-10">
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-bold text-sm text-brand-950" for="name"
+          <label class="font-medium text-sm text-brand-950" for="name"
             >Meu nome é</label
           >
           <InputText
@@ -61,7 +61,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-bold text-sm text-brand-950" for="email"
+          <label class="font-medium text-sm text-brand-950" for="email"
             >Meu e-mail</label
           >
           <InputText
@@ -73,7 +73,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-          <label class="font-bold text-sm text-brand-950" for="company"
+          <label class="font-medium text-sm text-brand-950" for="company"
             >Minha empresa é</label
           >
           <InputText
@@ -85,7 +85,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-          <label class="font-bold text-sm text-brand-950" for="phone"
+          <label class="font-medium text-sm text-brand-950" for="phone"
             >Whatsapp</label
           >
           <InputText
@@ -97,7 +97,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-bold text-sm text-brand-950" for="employees"
+          <label class="font-medium text-sm text-brand-950" for="employees"
             >Número de colaboradores da minha empresa</label
           >
           <SelectButton
@@ -107,7 +107,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-bold text-sm text-brand-950" for="services"
+          <label class="font-medium text-sm text-brand-950" for="services"
             >Eu preciso de ajuda com</label
           >
           <SelectButton
@@ -118,7 +118,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-bold text-sm text-brand-950" for="competitors"
+          <label class="font-medium text-sm text-brand-950" for="competitors"
             >Quais são seus concorrentes?</label
           >
           <InputText
@@ -130,7 +130,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-bold text-sm text-brand-950" for="project"
+          <label class="font-medium text-sm text-brand-950" for="project"
             >Conta pra gente, como poderíamos lhe ajudar?</label
           >
           <Textarea
@@ -152,7 +152,7 @@
               <div
                 class="flex flex-col items-center h-full w-full px-8 md:pb-0 pb-4 md:px-6"
               >
-                <span class="truncated w-full text-sm font-bold"
+                <span class="truncated w-full text-sm font-medium"
                   >Informações enviadas</span
                 >
                 <span
@@ -166,8 +166,8 @@
         <PrimeButton
           :loading="isLoading"
           class="md:w-fit"
-          icon="pi pi-arrow-right"
-          iconPos="right"
+           
+           
           size="large"
           label="Enviar informações"
           @click="sendEmail"

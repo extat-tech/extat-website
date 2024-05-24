@@ -4,7 +4,7 @@
   >
     <div class="flex w-full max-w-screen-xl flex-wrap justify-between gap-20">
       <div class="flex flex-col gap-5 max-w-xl">
-        <h3 class="text-brand-950 w-full md:text-4xl text-2xl font-semibold">
+        <h3 class="text-brand-950 w-full md:text-4xl text-2xl font-medium">
           Entregue mais valor com a Extat
         </h3>
         <p class="w-full text-gray-950/70">
@@ -24,8 +24,8 @@
             class="w-full sm:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
-            icon="pi pi-arrow-right"
-            iconPos="right"
+             
+             
           />
         </div>
       </div>

@@ -6,7 +6,7 @@
     <div class="flex flex-col gap-16 max-w-7xl items-center w-full">
       <!-- Texts -->
       <div class="grid md:grid-cols-2 w-full justify-between gap-6 lg:gap-10">
-        <h2 class="text-brand-950 w-full max-w-80 lg:max-w-3xl md:text-4xl text-2xl font-semibold">
+        <h2 class="text-brand-950 w-full max-w-80 lg:max-w-3xl md:text-4xl text-2xl font-medium">
           {{ title }}
         </h2>
         <p class="text-base w-full max-w-[540px] text-gray-950/70">

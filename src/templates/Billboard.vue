@@ -12,7 +12,7 @@
       <div
         class="flex flex-col bg-brand-700 p-6 xl:p-16 items-start justify-center gap-6 md:gap-10"
       >
-        <h3 class="text-white w-full lg:max-w-3xl md:text-4xl text-2xl font-semibold">
+        <h3 class="text-white w-full lg:max-w-3xl md:text-4xl text-2xl font-medium">
           {{ title }}
         </h3>
         <p class="text-white/80">{{ description }}</p>
@@ -22,8 +22,8 @@
             class="w-full md:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
-            icon="pi pi-arrow-right"
-            iconPos="right"
+             
+             
           />
       </div>
     </div>

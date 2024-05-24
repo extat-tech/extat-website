@@ -18,8 +18,8 @@
         class="w-full sm:w-fit"
         size="large"
         label="Quero organizar meu financeiro"
-        icon="pi pi-arrow-right"
-        iconPos="right"
+         
+         
       />
     </div>
   </div>

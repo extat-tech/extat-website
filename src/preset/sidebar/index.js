@@ -29,7 +29,7 @@ export default {
     class: ["flex items-center justify-between", "shrink-0", "min-h-14", "bg-transparent dark:bg-surface-800", "text-surface-700 dark:text-surface-0/80"]
   },
   title: {
-    class: ["font-semibold leading-6 text-base m-0"]
+    class: ["font-medium leading-6 text-base m-0"]
   },
   icons: {
     class: ["flex items-center"]

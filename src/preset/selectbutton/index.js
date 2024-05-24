@@ -35,6 +35,6 @@ export default {
     ]
   }),
   label: {
-    class: 'font-semibold'
+    class: 'font-medium'
   }
 }

@@ -4,7 +4,7 @@
   >
     <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10 max-w-7xl w-full">
       <div class="">
-        <span class="font-bold w-full text-xs text-brand-100/50"
+        <span class="font-medium w-full text-xs text-brand-100/50"
           >Links rápidos
           <ul>
             <li>
@@ -47,7 +47,7 @@
         </span>
       </div>
       <div class="">
-        <span class="font-bold w-full text-xs text-brand-100/50"
+        <span class="font-medium w-full text-xs text-brand-100/50"
           >Social
           <ul>
             <li>
@@ -61,7 +61,7 @@
           </ul>
         </span>
       </div>
-      <span class="font-bold w-full text-xs text-brand-100/50"
+      <span class="font-medium w-full text-xs text-brand-100/50"
         >Fale conosco
         <ul>
           <li>

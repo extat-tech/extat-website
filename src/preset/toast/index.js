@@ -38,7 +38,7 @@ export default {
     class: ["text-sm !truncated leading-none", "ml-2", "flex-1"]
   },
   summary: {
-    class: "font-bold gap-2 text-brand-950 block"
+    class: "font-medium gap-2 text-brand-950 block"
   },
   detail: ({ props }) => ({
       class: [

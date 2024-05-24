@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-3xl font-bold underline cursor-pointer">Login</h1>
+  <h1 class="text-3xl font-medium underline cursor-pointer">Login</h1>
   <form action="https://extat.evolutto.com.br" method="post">
     <div class="form-group" style="text-align: left">
       <label>Usuário ou e-mail</label>
