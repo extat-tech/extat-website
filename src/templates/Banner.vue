@@ -1693,7 +1693,7 @@
         class="flex flex-col items-start max-w-screen-sm w-full xl:text-left gap-6 lg:gap-10"
       >
         <h1
-          class="w-full lg:max-w-3xl md:text-4xl 2xl:text-5xl text-2xl text-brand-950 font-medium"
+          class="w-full lg:max-w-3xl md:text-4xl 2xl:text-5xl text-2xl text-brand-950 font-medium text-pretty"
         >
           {{ title.inicioTitulo }}
           <span class="text-brand-700">{{

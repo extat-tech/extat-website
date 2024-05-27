@@ -9,7 +9,7 @@
   :problemList="problems"
   description="Se a resposta foi sim para algum destes problemas, então está na hora de organizar seu financeiro."
 />
-  <ClientsCarousel title="Conheça as empresas que com a nossa ajuda, já tem um resultado financeiro claro"></ClientsCarousel>
+  <ClientsCarousel title="Conheça as empresas que com a nossa ajuda, já tem um resultado financeiro claro:"></ClientsCarousel>
   <!-- <Logos
     title="Conheça as empresas que com a nossa ajuda, já tem um resultado financeiro claro"
   /> -->

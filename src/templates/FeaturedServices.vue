@@ -89,16 +89,6 @@ const props = defineProps({
 
 const servicos = [
   {
-    nome: 'Indicadores e Métricas Chaves',
-    descricao: 'Com nossa expertise em indicadores e métricas chave, fornecemos relatórios financeiros personalizados sob demanda para o seu negócio. Mantenha-se informado e tome decisões estratégicas com base em dados precisos e relevantes.',
-    segmentos: ['Construção Civil', 'Transporte e Logística', 'Varejo', 'Turismo e Hotelaria']
-  },
-  {
-    nome: 'Treinamentos e Capacitação',
-    descricao: 'Capacite sua equipe para enfrentar os desafios financeiros do mercado atual com nossos programas de treinamento e capacitação. Oferecemos cursos especializados para aprimorar as habilidades financeiras de sua equipe e prepará-la para o sucesso em um ambiente competitivo.',
-    segmentos: ['Hospitais e Clínicas', 'Logística', 'Varejo', 'Turismo e Hotelaria']
-  },
-  {
     nome: 'Reestruturação Financeira',
     descricao: 'Reorganização das finanças para melhorar eficiência, reduzir custos e aumentar a transparência através da revisão de processos.',
     segmentos: ['Indústrias', 'Tecnologia', 'Serviços']
