@@ -1710,6 +1710,7 @@
             @click="redirectToContact"
             class="w-full"
             size="large"
+            rounded
             label="Quero organizar meu financeiro"
           />
         </div>
