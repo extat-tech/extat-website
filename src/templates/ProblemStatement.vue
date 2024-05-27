@@ -4,7 +4,7 @@
   >
     <!-- Container -->
     <div
-      class="max-w-7xl w-full bg-gradient-to-b from-brand-950 to-brand-900 p-10 lg:p-24  rounded-[40px] hover:shadow-2xl  hover:scale-105 transition-all "
+      class="max-w-7xl w-full bg-gradient-to-b from-brand-950 to-brand-900 p-6 md:p-10 lg:p-20 rounded-[24px] md:rounded-[40px] hover:shadow-2xl  hover:scale-105 transition-all "
     >
       <!-- Texts -->
       <div
@@ -40,14 +40,14 @@
             :key="item.title"
           >
             <span
-              class="bg-[#E55C5C]/20 flex rounded-md justify-center items-center min-w-10 min-h-10"
+              class="bg-[#E55C5C]/20 flex rounded-md justify-center items-center min-w-6 min-h-6 md:min-w-10 md:min-h-10"
             >
-              <i class="text-[#E55C5C] text-2xl" :class="item.icon"></i>
+              <i class="text-[#E55C5C] text-sm md:text-2xl" :class="item.icon"></i>
             </span>
-            <span class="text-base md:text-lg">{{ item.title }}</span>
+            <span class="text-sm md:text-lg">{{ item.title }}</span>
           </li>
         </ul>
-        <p class="text-xl w-full md:max-w-2xl text-white">
+        <p class="text-base md:text-xl w-full md:max-w-2xl text-white">
           {{ description }}
         </p>
         <!-- Buttons -->
@@ -59,7 +59,7 @@
             size="large"
             label="Quero organizar meu financeiro"
             />
-            <p class="text-white/75">Agende uma conversa conosco clicando no botão acima.</p>
+            <p class=" text-sm md:text-base  text-white/75">Agende uma conversa conosco clicando no botão acima.</p>
         </div>
       </div>
     </div>

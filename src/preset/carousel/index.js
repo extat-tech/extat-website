@@ -18,10 +18,10 @@ export default {
         ]
     }),
     previousbutton: {
-        class: ['flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900', 'hover:bg-brand-50 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
+        class: ['cursor-pointer flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900/60', 'hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
     },
     nextbutton: {
-        class: ['flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900', 'hover:bg-brand-50 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
+        class: ['cursor-pointer flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900/60', 'hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
     },
     itemscontent: {
         class: ['overflow-hidden w-full']
