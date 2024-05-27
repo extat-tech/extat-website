@@ -40,7 +40,7 @@
             :key="item.title"
           >
             <span
-              class="bg-[#E55C5C]/20 flex justify-center items-center min-w-10 min-h-10"
+              class="bg-[#E55C5C]/20 flex rounded-md justify-center items-center min-w-10 min-h-10"
             >
               <i class="text-[#E55C5C] text-2xl" :class="item.icon"></i>
             </span>
