@@ -18,10 +18,10 @@ export default {
         ]
     }),
     previousbutton: {
-        class: ['flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'rounded-full', 'border-0 bg-transparent', 'text-surface-600', 'hover:bg-surface-50 dark:hover:bg-surface-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
+        class: ['flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900', 'hover:bg-brand-50 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
     },
     nextbutton: {
-        class: ['flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'rounded-full', 'border-0 bg-transparent', 'text-surface-600', 'hover:bg-surface-50 dark:hover:bg-surface-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
+        class: ['flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900', 'hover:bg-brand-50 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
     },
     itemscontent: {
         class: ['overflow-hidden w-full']
@@ -64,20 +64,20 @@ export default {
         class: ['flex flex-row justify-center flex-wrap']
     },
     indicator: {
-        class: ['mr-2 mb-2']
+        class: ['mr-2 mt-10 mb-2']
     },
     indicatorbutton: ({ context }) => ({
         class: [
           // Sizing & Shape
-          'w-8 h-2 rounded-md',
+          'w-2 h-2 rounded-md',
           // Transitions
-          'transition duration-200',
+          'transition duration-400',
           // Focus Styles
           'focus:outline-none focus:outline-offset-0 focus:ring-1 focus:ring-primary-500 dark:focus:ring-primary-400',
           // Color & Background
           {
-            'bg-surface-200 hover:bg-surface-300 dark:bg-surface-700 dark:hover:bg-surface-600': !context.highlighted,
-            'bg-primary hover:bg-primary-hover': context.highlighted
+            'bg-brand-200 hover:bg-brand-300 dark:bg-brand-700 dark:hover:bg-brand-600': !context.highlighted,
+            'bg-brand-700 hover:bg-brand-900': context.highlighted
           }
         ]
     })
