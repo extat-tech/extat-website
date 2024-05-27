@@ -1,21 +1,23 @@
 <template>
   <header
-    class="transition-all z-30 fixed flex w-full items-center justify-center bg-white pl-6 h-14 shadow-sm border-brand-200"
+    class="transition-all z-30 fixed flex w-full items-center justify-center bg-white pl-6  h-[72px] shadow-sm border-brand-200"
   >
-    <div class="flex justify-between items-center w-full">
+    <div class="flex justify-between items-center w-full pr-6">
       <!-- Back to Home -->
       <Logo></Logo>
       <!-- Buttons  -->
-      <div class="flex items-center">
-        <PrimeButton
+      <div class="flex gap-3 items-center">
+        <PrimeButton  
+          rounded
           size="large"
-          class="hidden h-[54px] md:block"
+          class="hidden h-[44px] !px-4 md:block"
           @click="redirectLogin"
           label="Acesso para empresas"
         />
         <PrimeButton
-          class="h-14 w-14"
+          class="h-[44px] w-[44px]"
           severity="secondary"
+          rounded
           icon="pi pi-bars"
           @click="visible = true"
         />
