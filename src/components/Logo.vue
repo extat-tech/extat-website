@@ -1,7 +1,7 @@
 <template>
   <a
     href="/"
-    class="focus:outline-none transition-all focus:ring-offset-2 focus:ring focus:ring-brand-950"
+    class="focus:outline-none  rounded-md transition-all focus:ring-offset-2 focus:ring focus:ring-brand-950"
   >
     <svg
       class="ml-auto"
