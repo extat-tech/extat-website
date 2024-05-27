@@ -1,14 +1,14 @@
 <template>
   <section
-    class="px-6 p-24 xl:px-16 flex justify-center bg-gradient-to-b from-brand-950 to-brand-900"
+    class="px-3 p-24 xl:px-16 flex justify-center"
   >
     <!-- Container -->
     <div
-      class="max-w-7xl w-full"
+      class="max-w-7xl w-full bg-gradient-to-b from-brand-950 to-brand-900 p-10 lg:p-24  rounded-[40px] hover:shadow-2xl  hover:scale-105 transition-all "
     >
       <!-- Texts -->
       <div
-        class="flex flex-col items-start w-full gap-10 md:gap-20"
+        class="flex flex-col items-start w-full gap-10"
       >
         <div class="flex flex-wrap gap-10 w-full justify-between md:flex-row items-center"> 
           <h2
@@ -45,22 +45,21 @@
               <i class="text-[#E55C5C] text-2xl" :class="item.icon"></i>
             </span>
             <span class="text-base md:text-lg">{{ item.title }}</span>
-            <!-- Use item.title for the title -->
           </li>
         </ul>
         <p class="text-xl w-full md:max-w-2xl text-white">
           {{ description }}
         </p>
         <!-- Buttons -->
-        <div class="flex flex-col w-full sm:w-auto lg:flex-row lg:w-auto gap-3">
+        <div class="flex flex-col w-full gap-6">
           <PrimeButton
+            rounded
             @click="redirectToContact"
-            class="w-full"
+            class="w-full sm:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
-             
-             
-          />
+            />
+            <p class="text-white/75">Agende uma conversa conosco clicando no botão acima.</p>
         </div>
       </div>
     </div>
