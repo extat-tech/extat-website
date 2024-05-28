@@ -50,30 +50,6 @@ defineOptions({
   name: 'home-view'
 })
 
-const featuredServices = [
-  {
-    title: 'Reestruturação Financeira',
-    description:
-      'Oferecemos Reestruturação Financeira completa, incluindo diagnóstico financeiro, análise de mercado, planejamento financeiro e estruturação de fluxos de trabalho. Nosso objetivo é impulsionar o seu negócio com resultados tangíveis.',
-    icon: 'pi pi-arrow-right',
-    to: 'service/consultoria-financeira'
-  },
-  {
-    title: 'Indicadores e Métricas Chave',
-    description:
-      'Com nossa expertise em indicadores e métricas chave, fornecemos relatórios financeiros personalizados sob demanda para o seu negócio. Mantenha-se informado e tome decisões estratégicas com base em dados precisos e relevantes.',
-    icon: 'pi pi-arrow-right',
-    to: 'service/indicadores-metricas'
-  },
-  {
-    title: 'Treinamentos e Capacitação',
-    description:
-      'Capacite sua equipe para enfrentar os desafios financeiros do mercado atual com nossos programas de treinamento e capacitação. Oferecemos cursos especializados para aprimorar as habilidades financeiras de sua equipe e prepará-la para o sucesso em um ambiente competitivo.',
-    icon: 'pi pi-arrow-right',
-    to: 'service/treinamentos-capacitacao'
-  }
-]
-
 const problems = [
     { title: 'Desorganização financeira', icon: 'pi pi-times' },
     { title: 'Atrasos nos pagamentos', icon: 'pi pi-times' },
@@ -95,7 +71,7 @@ const problems = [
   {
     title: 'Inovação e Tecnologia',
     description: 'Utilizar ferramentas e tecnologias avançadas para aumentar a eficiência e fornecer soluções modernas.',
-    icon: 'pi pi-cog' 
+    icon: 'pi pi-code' 
   },
   {
     title: 'Personalização do Serviço',

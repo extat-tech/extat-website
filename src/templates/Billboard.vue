@@ -26,7 +26,7 @@
 import PrimeButton from 'primevue/button';
 
 const redirectToContact = () => {
-  window.location.href = '/contato';
+  window.location.href = '/contact';
 }
 
 defineOptions({

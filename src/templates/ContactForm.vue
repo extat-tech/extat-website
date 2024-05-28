@@ -49,7 +49,7 @@
     <form class="grid grid-cols-2 col-span-2 gap-8 pt-20 w-full">
       <fieldset class="flex flex-col col-span-3 gap-10">
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-medium text-sm text-brand-950" for="name"
+          <label class="font-semibold text-sm text-brand-950" for="name"
             >Meu nome é</label
           >
           <InputText
@@ -61,7 +61,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-medium text-sm text-brand-950" for="email"
+          <label class="font-semibold text-sm text-brand-950" for="email"
             >Meu e-mail</label
           >
           <InputText
@@ -73,7 +73,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-          <label class="font-medium text-sm text-brand-950" for="company"
+          <label class="font-semibold text-sm text-brand-950" for="company"
             >Minha empresa é</label
           >
           <InputText
@@ -85,7 +85,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-          <label class="font-medium text-sm text-brand-950" for="phone"
+          <label class="font-semibold text-sm text-brand-950" for="phone"
             >Whatsapp</label
           >
           <InputText
@@ -97,7 +97,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-medium text-sm text-brand-950" for="employees"
+          <label class="font-semibold text-sm text-brand-950" for="employees"
             >Número de colaboradores da minha empresa</label
           >
           <SelectButton
@@ -107,7 +107,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-medium text-sm text-brand-950" for="services"
+          <label class="font-semibold text-sm text-brand-950" for="services"
             >Eu preciso de ajuda com</label
           >
           <SelectButton
@@ -118,7 +118,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-medium text-sm text-brand-950" for="competitors"
+          <label class="font-semibold text-sm text-brand-950" for="competitors"
             >Quais são seus concorrentes?</label
           >
           <InputText
@@ -130,7 +130,7 @@
           />
         </div>
         <div class="flex flex-col gap-2 col-span-2">
-          <label class="font-medium text-sm text-brand-950" for="project"
+          <label class="font-semibold text-sm text-brand-950" for="project"
             >Conta pra gente, como poderíamos lhe ajudar?</label
           >
           <Textarea

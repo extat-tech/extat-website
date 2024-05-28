@@ -67,14 +67,14 @@ const items = ref([
   },
   {
     label: 'Contato',
-    route: '/contato'
+    route: '/contact'
   },
   {
     label: 'Serviços',
     items: [
       {
         label: 'Reestruturação Financeira',
-        route: '/service/consultoria-financeira'
+        route: '/service/reestruturacao-financeira'
       },
       {
         label: 'Indicadores e Métricas Chave',

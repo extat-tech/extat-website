@@ -17,7 +17,7 @@
       <!-- Texts -->
         <div class="flex flex-col gap-2">
           <h3 class="text-brand-900 text-xl font-medium">{{ card.title }}</h3>
-          <p class="h-fit text-balance leading-relaxed text-gray-950/70">{{ card.description }}</p>
+          <p class="h-fit text-balance max-w-96 leading-relaxed text-gray-950/60">{{ card.description }}</p>
         </div>
     </div>
   </div>

@@ -75,7 +75,7 @@ defineOptions({
 })
 
 const redirectToContact = () => {
-  window.location.href = '/contato';
+  window.location.href = '/contact';
 }
 
 const props = defineProps({

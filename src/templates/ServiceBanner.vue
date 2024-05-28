@@ -5,7 +5,7 @@
     <div class="max-w-7xl w-full">
       <div class="flex flex-col gap-6 mb-12">
         <h1
-          class="w-full lg:max-w-3xl text-4xl font-medium text-white"
+          class="w-full lg:max-w-3xl md:text-4xl 2xl:text-5xl text-2xl font-semibold text-pretty text-white"
         >
           {{ title }}
         </h1>
@@ -18,8 +18,7 @@
         class="w-full sm:w-fit"
         size="large"
         label="Quero organizar meu financeiro"
-         
-         
+        rounded     
       />
     </div>
   </div>
@@ -44,6 +43,6 @@ defineProps({
 })
 
 const redirectToContact = () => {
-  window.location.href = '/contato';
+  window.location.href = '/contact';
 }
 </script>

@@ -3,14 +3,14 @@ export const ServiceRoutes = {
   path: '/service',
   children: [
     {
-      path: 'consultoria-financeira',
-      name: 'consultoriaFinanceira',
+      path: 'reestruturacao-financeira',
+      name: 'reestruturacaoFinanceira',
       component: () => import('../../../views/RestruturaçãoFinanceira/index.vue')
     },
     {
-      path: 'indicadores-metricas',
-      name: 'indicadoresMetricas',
-      component: () => import('../../../views/IndicadoresChave/index.vue')
+      path: 'outros-servicos',
+      name: 'outrosServicos',
+      component: () => import('../../../views/OutrosServicos/index.vue')
     },
     {
       path: 'treinamentos-capacitacao',

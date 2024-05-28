@@ -3,29 +3,29 @@
     class="px-6 py-24 flex flex-col justify-center items-center gap-20 bg-white"
   >
     <div class="flex w-full max-w-screen-xl flex-wrap justify-between gap-20">
-      <div class="flex flex-col gap-5 max-w-xl">
+      <div class="flex flex-col w-full gap-5 md:max-w-xl">
         <h3 class="text-brand-950 w-full md:text-4xl text-2xl font-medium">
           Entregue mais valor com a Extat
         </h3>
-        <p class="w-full text-gray-950/70">
-          Nossos serviços e metologia impactam centas de empresas dos mais
+        <p class="w-full text-gray-950/60">
+          Nossos serviços e metologia impactam centenas de empresas dos mais
           variados tamanhos e segmentos
         </p>
         <div class="flex flex-col w-full md:flex-row lg:w-auto gap-6">
           <PrimeButton
             @click="redirectToHome"
-            class="w-full sm:w-fit"
+            class="w-full md:w-fit"
             size="large"
             label="Nossos serviços"
             severity="secondary"
+            rounded
           />
           <PrimeButton
             @click="redirectToContact"
-            class="w-full sm:w-fit"
+            class="w-full md:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
             rounded
-             
           />
         </div>
       </div>
@@ -44,7 +44,6 @@
 
 <script setup>
 import PrimeButton from 'primevue/button'
-import ScheduleCall from '../components/ScheduleCall.vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -66,15 +65,15 @@ const redirectToHome = () => {
   })
 }
 const redirectToContact = () => {
-  window.location.href = '/contato';
+  window.location.href = '/contact';
 }
 
 const metrics = [
   { metric: '+10', caption: 'anos no mercado' },
   { metric: '+70', caption: 'de 70 projetos atendidos' },
-  { metric: 'R$ 1.408.104.583', caption: 'faturamento dos clientes somados' },
-  { metric: 'R$ 260.689.066', caption: 'econômia gerada nos clientes' },
-  { metric: '10 A 20% A.A.', caption: 'crescimento médio dos clientes' }
+  { metric: 'R$ 1.4 Bi', caption: 'faturamento dos clientes somados' },
+  { metric: 'R$ 260 Mi', caption: 'econômia gerada nos clientes' },
+  { metric: '10% a 20% a.a', caption: 'de crescimento médio dos clientes' }
 ];
 
 </script>

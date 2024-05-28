@@ -7,7 +7,7 @@
         <h2 class="text-brand-950 w-full md:text-4xl text-2xl font-medium">
           {{ title }}
         </h2>
-        <p class="w-full text-gray-950/70">{{ description }}</p>
+        <p class="w-full text-gray-950/60">{{ description }}</p>
         <PrimeButton
             @click="redirectToContact"
             class="w-full md:w-fit"
@@ -30,7 +30,7 @@ defineOptions({
 })
 
 const redirectToContact = () => {
-  window.location.href = '/contato';
+  window.location.href = '/contact';
 }
 
 const props = defineProps({

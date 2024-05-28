@@ -17,7 +17,7 @@
             </li>
             <li>
               <PrimeButton
-                @click="redirectToConsultoriaFinanceira"
+                @click="redirectToReestruturacaoFinanceira"
                 class="!px-0 rounded-sm !py-0 text-gray-50"
                 link
                 label="Reestruturação Financeira"
@@ -25,6 +25,15 @@
               </PrimeButton>
             </li>
             <li>
+              <PrimeButton
+                @click="redirectToOutrosServicos"
+                class="!px-0 rounded-sm !py-0 text-gray-50"
+                link
+                label="Outros serviços"
+              >
+              </PrimeButton>
+            </li>
+            <!-- <li>
               <PrimeButton
                 @click="redirectToIndicadoresMetricas"
                 class="!px-0 rounded-sm !py-0 text-gray-50"
@@ -41,8 +50,7 @@
                 label="Treinamentos e Capacitação"
               >
               </PrimeButton>
-            </li>
-            
+            </li> -->
           </ul>
         </span>
       </div>
@@ -146,17 +154,17 @@ const redirectHome = () => {
   window.location.href = '/'
 }
 const redirectToContact = () => {
-  window.location.href = '/contato'
+  window.location.href = '/contact'
 }
 
 const router = useRouter()
 
-const redirectToConsultoriaFinanceira = () => {
-  window.location.href = '/service/consultoria-financeira'
+const redirectToReestruturacaoFinanceira = () => {
+  window.location.href = '/service/reestruturacao-financeira'
 }
 
-const redirectToIndicadoresMetricas = () => {
-  window.location.href = '/service/indicadores-metricas'
+const redirectToOutrosServicos = () => {
+  window.location.href = '/service/outros-servicos'
 }
 
 const redirectToTreinamentosCapacitacao = () => {

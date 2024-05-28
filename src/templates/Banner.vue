@@ -1701,7 +1701,7 @@
           }}</span>
           {{ title.finalTitulo }}
         </h1>
-        <p class="md:text-xl w-full md:max-w-2xl text-gray-950/70">
+        <p class="md:text-xl w-full md:max-w-2xl text-gray-950/60">
           {{ description }}
         </p>
         <!-- Buttons -->
@@ -1733,7 +1733,7 @@ defineOptions({
 })
 
 const redirectToContact = () => {
-  window.location.href = '/contato';
+  window.location.href = '/contact';
 }
 
 const props = defineProps({

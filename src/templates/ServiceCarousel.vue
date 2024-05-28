@@ -6,16 +6,17 @@
         :showNavigators="false" 
         :responsiveOptions="responsiveOptions" 
         :autoplayInterval="4000"
+        :numVisible="3"
+        :numScroll="1"
       >
         <template #item="{ data }">
-    
             <div class="">
               <div class="rounded-2xl h-auto lg:h-[280px] p-6 w-full md:p-8 bg-white flex flex-col">
                 <div class="space-y-5 w-full">
                   <h3 class="text-brand-900 w-full truncate group-hover:text-white text-base font-semibold">
                     {{ data.nome }}
                   </h3>
-                  <p class="text-gray-950/70 w-full group-hover:text-white text-sm">
+                  <p class="text-gray-950/60 w-full group-hover:text-white text-sm">
                     {{ data.descricao }}
                   </p>
               </div>
@@ -27,7 +28,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import Carousel from 'primevue/carousel';
 
 const servicos = [
@@ -68,12 +68,12 @@ const servicos = [
 const responsiveOptions = [
   {
     breakpoint: '1400px',
-    numVisible: 2,
+    numVisible: 3,
     numScroll: 1
   },
   {
     breakpoint: '1199px',
-    numVisible: 3,
+    numVisible: 2,
     numScroll: 1
   },
   {
