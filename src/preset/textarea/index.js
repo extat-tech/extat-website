@@ -8,7 +8,7 @@ export default {
         'm-0',
         'py-2.5 px-4',
         // Shape
-        'rounded-none',
+        'rounded-md',
         'appearance-none',
         // Colors
         'text-brand-950 dark:text-brand-0',

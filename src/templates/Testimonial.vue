@@ -9,7 +9,7 @@
         class="flex flex-col justify-start md:justify-center items-center max-w-4xl"
       >
         <!-- Quote -->
-        <h3 class="text-white md:text-center text-3xl md:text-5xl">
+        <h3 class="text-white md:text-center text-xl sm:text-3xl md:text-4xl">
           {{ quote }}
         </h3>
         <div class="grid mt-10 gap-4 w-full md:place-items-center">

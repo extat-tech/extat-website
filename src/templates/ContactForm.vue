@@ -166,8 +166,7 @@
         <PrimeButton
           :loading="isLoading"
           class="md:w-fit"
-           
-           
+          rounded
           size="large"
           label="Enviar informações"
           @click="sendEmail"

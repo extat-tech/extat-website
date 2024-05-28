@@ -1716,7 +1716,7 @@
         </div>
       </div>
       <img
-        class="aspect-square"
+        class="aspect-square w-full mx-auto md:mx-none"
         src="/src/assets/img/banner.png"
         alt=""
         srcset=""

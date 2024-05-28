@@ -10,9 +10,6 @@
   description="Se a resposta foi sim para algum destes problemas, então está na hora de organizar seu financeiro."
 />
   <ClientsCarousel title="Conheça as empresas que com a nossa ajuda, já tem um resultado financeiro claro:"></ClientsCarousel>
-  <!-- <Logos
-    title="Conheça as empresas que com a nossa ajuda, já tem um resultado financeiro claro"
-  /> -->
 
   <FeaturedServices
     id="anchorScroll"
@@ -43,7 +40,6 @@ import ClientsCarousel from '../../templates/ClientsCarousel.vue';
 import HeaderNavigation from '../../templates/HeaderNavigation.vue'
 import Banner from '../../templates/Banner.vue'
 import ProblemStatement from '../../templates/ProblemStatement.vue'
-import Logos from '../../templates/Logos.vue'
 import FeaturedServices from '../../templates/FeaturedServices.vue'
 import Testimonial from '../../templates/Testimonial.vue'
 import CompanyFeatures from '../../templates/CompanyFeatures.vue'

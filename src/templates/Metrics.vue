@@ -24,7 +24,7 @@
             class="w-full sm:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
-             
+            rounded
              
           />
         </div>

@@ -15,7 +15,7 @@ export default {
       // Shape
       'ring-1',
       { 'ring-gray-200 dark:ring-gray-700': !props.invalid },
-      'rounded-none',
+      'rounded-md',
       // Color
       {
         'bg-gray-50 hover:bg-brand-700 hover:text-white dark:bg-gray-900': !context.active,

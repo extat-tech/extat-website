@@ -13,8 +13,7 @@
             class="w-full md:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
-             
-             
+            rounded   
           />
       </div>
       <CardGrid :cardList="items"></CardGrid>

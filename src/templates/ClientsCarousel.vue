@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl gap-20 flex flex-col w-full">
         <span class="text-brand-950/80  w-full text-sm font-regular"> {{ title }} </span
         >
-      <Carousel class="" :value="brands" :numVisible="3" :numScroll="3" :responsiveOptions="responsiveOptions" :autoplayInterval="1500">
+      <Carousel class="" :value="brands" :showIndicators="false" :showNavigators="false" :numVisible="3" :numScroll="1" :responsiveOptions="responsiveOptions" :autoplayInterval="1500">
         <template #item="slotProps">
           <div class="flex flex-col items-center mx-auto justify-center">
             <img :src="slotProps.data.img" alt="" class="max-w-40 w-full h-full grid place-content-center" />

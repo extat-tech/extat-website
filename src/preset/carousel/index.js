@@ -18,10 +18,10 @@ export default {
         ]
     }),
     previousbutton: {
-        class: ['cursor-pointer flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900/60', 'hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
+        class: ['cursor-pointer flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900/60', 'focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
     },
     nextbutton: {
-        class: ['cursor-pointer flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900/60', 'hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
+        class: ['cursor-pointer flex justify-center items-center self-center', 'overflow-hidden w-8 h-8', 'mx-2', 'min-h-[44px] min-w-[44px] rounded-full', 'border-0 bg-transparent', 'text-brand-900/60', 'focus:outline-none focus:ring-offset-2 focus:ring focus:ring-brand-950 hover:bg-brand-50 hover:text-brand-700 dark:hover:bg-brand-800', 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400', 'transition duration-200 ease-in-out']
     },
     itemscontent: {
         class: ['overflow-hidden w-full']
@@ -32,15 +32,15 @@ export default {
           'flex',
           // Orientation & Sizing
           {
-            'flex-row': props.orientation !== 'vertical',
-            'flex-col h-full': props.orientation == 'vertical'
+            'flex-row gap-0 sm:gap-4 md:gap-6 lg:gap-8': props.orientation !== 'vertical',
+            'flex-col h-full ': props.orientation == 'vertical'
           }
         ]
     }),
     item: ({ props }) => ({
         class: [
           // Flexbox
-          'flex shrink-0 grow ',
+          'flex shrink-0 grow',
           // Size
           {
             'w-full sm:w-[50%] md:w-[33.333333333333336%]': props.orientation !== 'vertical',

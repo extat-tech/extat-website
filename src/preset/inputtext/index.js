@@ -24,8 +24,8 @@ export default {
             // Invalid State
             { 'ring-red-500 dark:ring-red-400': props.invalid },
             // Shape
-            { 'rounded-none': parent.instance.$name !== 'InputGroup' },
-            { 'first:rounded-l-md rounded-none last:rounded-r-md': parent.instance.$name == 'InputGroup' },
+            { 'rounded-md': parent.instance.$name !== 'InputGroup' },
+            { 'first:rounded-l-md rounded-md last:rounded-r-md': parent.instance.$name == 'InputGroup' },
             { 'border-0 border-y border-l last:border-r border-surface-300 dark:border-surface-600': parent.instance.$name == 'InputGroup' },
             { 'first:ml-0 -ml-px': parent.instance.$name == 'InputGroup' && !props.showButtons },
             'appearance-none',
