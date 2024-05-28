@@ -143,20 +143,20 @@
         </div>
         <Toast position="top-right">
           <template #message>
-            <div class="flex gap-2 flex-col md:flex-row md:items-center w-full">
+            <div class="flex gap-4 items-center w-full mr-10 p-2">
               <div
-                class="bg-green-200 h-8 w-8 md:min-h-14 md:min-w-14 flex items-center justify-center"
+                class="bg-green-200 rounded-md min-h-8 min-w-8 flex items-center justify-center"
               >
-                <i class="pi pi-check text-green-700"></i>
+                <i class="pi pi-check text-sm text-green-700"></i>
               </div>
               <div
-                class="flex flex-col items-center h-full w-full px-8 md:pb-0 pb-4 md:px-6"
+                class="flex flex-col gap-1 items-center h-full w-full "
               >
-                <span class="truncated w-full text-sm font-medium"
+                <span class="truncated w-full text-sm font-semibold"
                   >Informações enviadas</span
                 >
                 <span
-                  class="truncated w-full text-sm font-medium text-brand-950/70"
+                  class="truncated w-full text-xs font-medium text-brand-950/70"
                   >Consulte seu e-mail para mais informações</span
                 >
               </div>
@@ -208,8 +208,16 @@ const service = ref(null)
 const serviceOptions = ref([
   'Reestruturação Financeira',
   'Indicadores e Métricas',
-  'Treinamento e Capacitação'
-])
+  'Treinamento e Capacitação',
+  'Auditoria Financeira',
+  'Orçamento Financeiro',
+  'Análise de Preços + Precificação',
+  'Elaboração de Metas do Comercial',
+  'Capacitação de Equipe Financeira',
+  'Análise de Viabilidade de Projetos',
+  'Mapeamento e Estruturação de Processos'
+]);
+
 const competitors = ref('')
 const project = ref('')
 

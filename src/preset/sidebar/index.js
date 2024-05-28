@@ -26,7 +26,7 @@ export default {
       ]
     }),
   header: {
-    class: ["flex items-center justify-between", "shrink-0", "min-h-14", "bg-transparent dark:bg-surface-800", "text-surface-700 dark:text-surface-0/80"]
+    class: ["flex items-center justify-between p-4", "shrink-0", "min-h-14", "bg-transparent dark:bg-surface-800", "text-surface-700 dark:text-surface-0/80"]
   },
   title: {
     class: ["font-medium leading-6 text-base m-0"]
@@ -35,13 +35,13 @@ export default {
     class: ["flex items-center"]
   },
   closeButton: {
-    class: ["relative", "flex items-center justify-center", "mr-2", "last:mr-0", "w-14 h-14", "border-0", "rounded-none", "text-surface-500", "bg-gray-100", "transition duration-200 ease-in-out", "hover:text-surface-700 dark:hover:text-white/80", "hover:bg-surface-100 dark:hover:bg-surface-800/80", "focus:outline-none focus:outline-offset-1 focus:ring-2 focus:ring-inset", "focus:ring-brand-950 dark:focus:ring-primary-400", "overflow-hidden"]
+    class: ["relative", "flex items-center justify-center", "mr-2", "last:mr-0", "w-10 h-10", "border-0", "rounded-full", "text-brand-900", "bg-gray-100", "transition duration-200 ease-in-out", "hover:text-brand-900 dark:hover:text-white/80", "hover:bg-gray-200 dark:hover:bg-surface-800/80", "focus:outline-none focus:outline-offset-1 focus:ring-2 focus:ring-inset", "focus:ring-brand-950 dark:focus:ring-primary-400", "overflow-hidden"]
   },
   closeicon: {
     class: ["inline-block", "w-5", "h-5"]
   },
   content: {
-    class: ["px-0 pb-0", "mt-6", "h-full", "w-full", "grow", "overflow-y-auto"]
+    class: ["p-4", "mt-6", "h-full", "w-full", "grow", "overflow-y-auto"]
   },
   mask: ({ props }) => ({
       class: [

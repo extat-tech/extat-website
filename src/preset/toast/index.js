@@ -2,14 +2,14 @@ export default {
   root: ({ props }) => ({
       class: [
         //Size and Shape
-        "!right-0 md:mx-8 md:w-fit w-full rounded-none h-14",
+        "!right-0 md:mx-8 md:w-fit w-full rounded-md h-14",
         // Positioning
         { "-translate-x-2/4": props.position == "top-center" || props.position == "bottom-center" }
       ]
     }),
   container: ({ props }) => ({
       class: [
-        "my-4 rounded-none w-full",
+        "my-4 rounded-md w-full",
         "shadow-md",
         "bg-white dark:bg-surface-800",
         "ring-1 ring-gray-200 dark:ring-surface-700 ring-offset-0",
@@ -26,13 +26,13 @@ export default {
       class: [
         "flex",
         {
-          "items-start": props.message.summary,
+          "items-center": props.message.summary,
           "items-center": !props.message.summary
         }
       ]
     }),
   icon: {
-    class: ["min-w-5 min-h-5", "mr-2 "]
+    class: ["min-w-4 min-h-4", "mr-2 "]
   },
   text: {
     class: ["text-sm !truncated leading-none", "ml-2", "flex-1"]
@@ -48,7 +48,7 @@ export default {
       ]
     }),
   closebutton: {
-    class: ["rounded-none flex items-center justify-center", "w-8 h-8 md:w-14 md:h-14", "ml-auto relative", "rounded-none", "bg-gray-100", "text-surface-700 dark:text-surface-0/80", "transition duration-200 ease-in-out", "hover:bg-gray-200 dark:hover:bg-surface-700", "outline-none focus:ring-1 focus:ring-inset", "focus:ring-primary-500 dark:focus:ring-primary-400", "overflow-hidden"]
+    class: ["rounded-md mt-2 mr-2 flex items-center justify-center", "w-8 h-8", "ml-auto relative", "rounded-md", "bg-gray-100", "text-surface-700 dark:text-surface-0/80", "transition duration-200 ease-in-out", "hover:bg-gray-200 dark:hover:bg-surface-700", "outline-none focus:ring-1 focus:ring-inset", "focus:outline-none focus:outline-offset-0 focus:ring-2 focus:ring-offset-current focus:ring-brand-900", "overflow-hidden"]
   },
   closeicon: {
     class: ["w-4 h-4", "shrink-0"]

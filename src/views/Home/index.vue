@@ -23,13 +23,14 @@
   :items="pilars"
   ></CompanyFeatures>
   <Testimonial
-    quote="A Extat revolucionou a forma como gerencio as finanças da minha empresa."
-    client="Jozerly Junior"
-    role="Diretor Executivo, Bio Data Ltda."
+    quote="O Centro de Movimento Soraya Lira (CMSL) enfrentava uma grande crise e estava à beira do fechamento, mas, com a orientação financeira de Jozerly Júnior da Extat, reorganizou sua estrutura em três anos e se recuperou, tornando-se um sucesso. A confiança na gestão de Jozerly foi crucial para superar a crise, mesmo durante a pandemia."
+    client="Soraya Lira"
+    role="Sócia proprietária, Centro de Movimento Soraya Lira."
+    image="/public/client.png"
   />
   <Billboard
-    title="Faça as melhores decisões para o seu negócio"
-    description="Explore nossa expertise e produtos e saiba como ajudamos diferentes empresas com sucesso. Ou entre em contato conosco para agendar uma ligação introdutória."
+    title="Tome melhores decisões para sua empresa."
+    description="Conte com nossa expertise e saiba como ajudamos diferentes empresas a ter melhores resultados, entre em contato agora conosco para agendar uma consultoria gratuita."
   ></Billboard>
   <Footer></Footer>
 </template>

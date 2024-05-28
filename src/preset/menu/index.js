@@ -4,7 +4,7 @@ export default {
 
             // Sizing and Shape
             'min-w-[12rem]',
-            'rounded-none',
+            ' rounded-lg',
             // Spacing
             'p-0',
             // Colors
@@ -25,13 +25,13 @@ export default {
     menuitem: {
         class: [
             // Space
-            'first:mt-0 mt-2 last:mt-2'
+            'first:mt-1 mt-2 last:mt-2'
         ]
     },
     content: ({ context }) => ({
         class: [
             //Shape
-            'rounded-none',
+            ' rounded-lg',
 
             // Colors
             {
@@ -88,7 +88,7 @@ export default {
             'text-xs leading-6',
 
             // Spacing
-            'mt-4',
+            'mt-10',
             'py-0',
             'px-3',
 

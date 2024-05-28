@@ -10,8 +10,8 @@
   ></ClientsCarousel>
   <Metrics />
   <Billboard
-    title="Faça as melhores decisões para o seu negócio"
-    description="Explore nossa expertise e produtos e saiba como ajudamos diferentes empresas com sucesso. Ou entre em contato conosco para agendar uma ligação introdutória."
+    title="Tome melhores decisões para sua empresa."
+    description="Conte com nossa expertise e saiba como ajudamos diferentes empresas a ter melhores resultados, entre em contato agora conosco para agendar uma consultoria gratuita. "
   />
   <Footer />
 </template>

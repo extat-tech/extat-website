@@ -31,7 +31,7 @@
       <Menu :model="items">
         <template #item ="{item}">
           <router-link :to="item.route">
-            <span class="flex items-center py-3 px-3 font-medium">{{ item.label }}</span>
+            <span class="flex items-center py-3 px-3 text-sm font-medium">{{ item.label }}</span>
           </router-link>
         </template>
       </Menu>
@@ -41,6 +41,7 @@
           size="large"
           @click="redirectLogin"
           label="Acesso para empresas"
+          rounded
         />
       </div>
     </div>
@@ -77,12 +78,8 @@ const items = ref([
         route: '/service/reestruturacao-financeira'
       },
       {
-        label: 'Indicadores e Métricas Chave',
-        route: '/service/indicadores-metricas'
-      },
-      {
-        label: 'Treinamentos e Capacitação',
-        route: '/service/treinamentos-capacitacao'
+        label: 'Outros Serviços',
+        route: '/service/outros-servicos'
       }
     ]
   }
