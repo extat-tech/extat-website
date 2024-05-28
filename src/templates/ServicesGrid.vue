@@ -60,11 +60,6 @@ defineOptions({
 
 const services = ref([
   {
-    nome: 'Reestruturação Financeira',
-    descricao:
-      'Reorganização das finanças para melhorar eficiência, reduzir custos e aumentar a transparência através da revisão de processos.'
-  },
-  {
     nome: 'Auditoria Financeira',
     descricao:
       'Exame detalhado das demonstrações financeiras para garantir precisão e conformidade, identificando irregularidades e melhorias.'
