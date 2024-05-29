@@ -11,11 +11,6 @@ export const ServiceRoutes = {
       path: 'outros-servicos',
       name: 'outrosServicos',
       component: () => import('../../../views/OutrosServicos/index.vue')
-    },
-    {
-      path: 'treinamentos-capacitacao',
-      name: 'treinamentosCapacitacao',
-      component: () => import('../../../views/TreinamentosCapacitacão/index.vue')
     }
   ]
 }

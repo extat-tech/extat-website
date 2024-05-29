@@ -36,8 +36,6 @@ import Metrics from '../../templates/Metrics.vue'
 import Billboard from '../../templates/Billboard.vue'
 import Footer from '../../templates/Footer.vue'
 
-
-
 const methodology = [
   {
     title: 'Diagnóstico Financeiro',
