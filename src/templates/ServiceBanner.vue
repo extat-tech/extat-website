@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="bg-brand-950 relative flex justify-center px-6 pt-[152px] pb-24 xl:px-16"
   >
     <div class="max-w-7xl w-full">
@@ -21,7 +21,7 @@
         rounded     
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
