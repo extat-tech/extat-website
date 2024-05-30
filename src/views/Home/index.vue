@@ -25,7 +25,7 @@
     quote="O Centro de Movimento Soraya Lira (CMSL) enfrentava uma grande crise e estava à beira do fechamento, mas, com a orientação financeira de Jozerly Júnior da Extat, reorganizou sua estrutura em três anos e se recuperou, tornando-se um sucesso. A confiança na gestão de Jozerly foi crucial para superar a crise, mesmo durante a pandemia."
     client="Soraya Lira"
     role="Sócia proprietária, Centro de Movimento Soraya Lira."
-    image="/public/client.png"
+    image="/client.png"
   />
   <Billboard
     title="Tome melhores decisões para sua empresa."
