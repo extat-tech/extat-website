@@ -1,14 +1,13 @@
 <template>
   <header
-    class="transition-all z-30 fixed  top-0 backdrop-blur-lg  flex w-full items-center justify-center bg-gray-100/80 pl-6 h-[72px] shadow-sm border-brand-200"
+    class="transition-all z-30 fixed top-0 backdrop-blur-lg flex w-full items-center justify-center bg-gray-100/80 pl-6 h-[72px] shadow-sm border-brand-200"
   >
     <div class="flex justify-between items-center w-full pr-6">
       <!-- Back to Home -->
       <Logo></Logo>
       <!-- Buttons  -->
       <div class="flex gap-3 items-center">
-        <PrimeButton  
-          rounded
+        <PrimeButton
           size="large"
           class="hidden h-[44px] !px-4 md:block"
           @click="redirectLogin"
@@ -17,7 +16,6 @@
         <PrimeButton
           class="h-[44px] w-[44px]"
           severity="secondary"
-          rounded
           icon="pi pi-bars"
           @click="visible = true"
         />
@@ -29,9 +27,11 @@
   <SideNavigation position="right" v-model:visible="visible" header=" ">
     <div class="flex flex-col h-full justify-between">
       <Menu :model="items">
-        <template #item ="{item}">
+        <template #item="{ item }">
           <router-link :to="item.route">
-            <span class="flex items-center py-3 px-3 text-sm font-medium">{{ item.label }}</span>
+            <span class="flex items-center py-3 px-3 text-sm font-medium">{{
+              item.label
+            }}</span>
           </router-link>
         </template>
       </Menu>
@@ -41,7 +41,6 @@
           size="large"
           @click="redirectLogin"
           label="Acesso para empresas"
-          rounded
         />
       </div>
     </div>
@@ -58,7 +57,7 @@ import { ref } from 'vue'
 const visible = ref(false)
 
 const redirectLogin = () => {
-  window.open('https://extat.evolutto.com.br/', '_blank')
+  window.open('https://stage.app.extat.com.br/', '_blank')
 }
 
 const items = ref([

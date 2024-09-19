@@ -1,5 +1,7 @@
 <template>
-  <section class="flex flex-col justify-center items-center gap-8 h-screen bg-brand-950">
+  <section
+    class="flex flex-col justify-center items-center gap-8 h-screen bg-brand-950"
+  >
     <svg
       class="w-10 mb-5"
       viewBox="0 0 72 76"
@@ -16,9 +18,7 @@
         fill-opacity="0.6"
       />
     </svg>
-    <h1
-      class="w-full text-center text-7xl font-bold text-brand-50 text-pretty"
-    >
+    <h1 class="w-full text-center text-7xl font-bold text-brand-50 text-pretty">
       404
     </h1>
     <p class="text-brand-50/70 text-2xl">Pagina não encontrada</p>
@@ -26,8 +26,6 @@
       @click="redirectToHome"
       label="Voltar ao inicio"
       severity="secondary"
-
-      rounded
     />
   </section>
 </template>

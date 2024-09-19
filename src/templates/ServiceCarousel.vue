@@ -6,7 +6,7 @@
         :showNavigators="false" 
         :responsiveOptions="responsiveOptions" 
         :autoplayInterval="4000"
-        :numVisible="3"
+        :numVisible="2"
         :numScroll="1"
       >
         <template #item="{ data }">
@@ -67,22 +67,22 @@ const servicos = [
 
 const responsiveOptions = [
   {
-    breakpoint: '1400px',
+    breakpoint: '1536px',
     numVisible: 3,
     numScroll: 1
   },
   {
     breakpoint: '1199px',
-    numVisible: 2,
-    numScroll: 1
+    numVisible: 3,
+    numScroll: 3
   },
   {
     breakpoint: '767px',
     numVisible: 2,
-    numScroll: 1
+    numScroll: 2
   },
   {
-    breakpoint: '575px',
+    breakpoint: '640px',
     numVisible: 1,
     numScroll: 1
   }

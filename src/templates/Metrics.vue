@@ -18,14 +18,12 @@
             size="large"
             label="Nossos serviços"
             severity="secondary"
-            rounded
           />
           <PrimeButton
             @click="redirectToContact"
             class="w-full md:w-fit"
             size="large"
             label="Quero organizar meu financeiro"
-            rounded
           />
         </div>
       </div>
@@ -34,9 +32,15 @@
     <div
       class="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-16 w-full"
     >
-      <div v-for="(metric, index) in metrics" :key="index" class="border-l-2  border-brand-700 pl-4 gap-3 grid min-w-[280px]">
+      <div
+        v-for="(metric, index) in metrics"
+        :key="index"
+        class="border-l-2 border-brand-700 pl-4 gap-3 grid min-w-[280px]"
+      >
         <h2 class="text-3xl font-medium text-brand-700">{{ metric.metric }}</h2>
-        <p class="font-medium  text-base text-gray-900/60">{{ metric.caption }}</p>
+        <p class="font-medium text-base text-gray-900/60">
+          {{ metric.caption }}
+        </p>
       </div>
     </div>
   </div>
@@ -65,7 +69,7 @@ const redirectToHome = () => {
   })
 }
 const redirectToContact = () => {
-  window.location.href = '/contact';
+  window.location.href = '/contact'
 }
 
 const metrics = [
@@ -74,6 +78,5 @@ const metrics = [
   { metric: 'R$ 1.4 Bi', caption: 'faturamento dos clientes somados' },
   { metric: 'R$ 260 Mi', caption: 'econômia gerada nos clientes' },
   { metric: '10% a 20% a.a', caption: 'de crescimento médio dos clientes' }
-];
-
+]
 </script>

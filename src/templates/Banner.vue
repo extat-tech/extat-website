@@ -1693,12 +1693,10 @@
         class="flex flex-col items-start max-w-screen-sm w-full xl:text-left gap-6 lg:gap-10"
       >
         <h1
-          class="w-full lg:max-w-3xl md:text-4xl 2xl:text-5xl text-2xl text-brand-950  font-semibold text-pretty"
+          class="w-full lg:max-w-3xl md:text-4xl 2xl:text-5xl text-2xl text-brand-950 font-semibold text-pretty"
         >
           {{ title.inicioTitulo }}
-          <span class="text-brand-700">{{
-            title.mensagemMarcada
-          }}</span>
+          <span class="text-brand-700">{{ title.mensagemMarcada }}</span>
           {{ title.finalTitulo }}
         </h1>
         <p class="md:text-xl w-full md:max-w-2xl text-gray-950/60">
@@ -1710,7 +1708,6 @@
             @click="redirectToContact"
             class="w-full"
             size="large"
-            rounded
             label="Quero organizar meu financeiro"
           />
         </div>
@@ -1733,7 +1730,7 @@ defineOptions({
 })
 
 const redirectToContact = () => {
-  window.location.href = '/contact';
+  window.location.href = '/contact'
 }
 
 const props = defineProps({
