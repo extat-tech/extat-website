@@ -57,7 +57,7 @@ import { ref } from 'vue'
 const visible = ref(false)
 
 const redirectLogin = () => {
-  window.open('https://stage.app.extat.com.br/', '_blank')
+  window.open('https://app.extat.com.br/', '_blank')
 }
 
 const items = ref([
